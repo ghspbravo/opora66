@@ -1,0 +1,134 @@
+/* ELEMENTS */
+
+.section-full {
+    height: calc(100vh - 100px);
+}
+
+section:not(.section-full) {
+    padding: 75px 0;
+}
+
+.section-dark {
+    background-color: var(--main-dark);
+}
+
+.section-dark p,h1,h2,a {
+    color: white;
+}
+
+.section-side-left {
+    background: linear-gradient(90deg, var(--main) 25%, transparent 25%, white)
+}
+
+button {
+    padding: 20px 40px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-acsent {
+    background-color: var(--acsent);
+    border: 1px solid var(--acsent);
+}
+
+.button-acsent:hover {
+    background-color: white;
+    color: black;
+}
+
+.button-light {
+    background-color: var(--main-light);
+}
+
+.button-light:hover {
+    background-color: var(--main);
+}
+
+.button-ghost {
+    border: 1px solid white;
+}
+
+.button-ghost:hover {
+    background-color: white;
+    color: black;
+}
+
+.image-bordered img {
+    border: 10px solid white;
+    box-shadow: 0px 0px 100px rgba(30, 30, 31, 0.15);
+}
+
+/* SECTIONS */
+/* HEADER */
+
+.header {
+    height: 100px;
+    overflow: hidden;
+    position: sticky;
+}
+
+.header-brand {
+    width: 255px;
+    height: 100px;
+}
+
+.header-nav-item {
+    padding: 30px 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-nav-item:hover {
+    text-decoration: underline;
+}
+
+.header-controls {
+    text-align: end;
+}
+
+/* BANNER */
+
+#banner .banner-slogan,
+#banner .banner-title,
+#banner .banner-subtitle {
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.banner-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.banner-slogan {
+    font-size: 18px;
+}
+
+.banner-controls {
+    margin-top: 70px;
+}
+
+.banner-controls button {
+    margin: 0 10px
+}
+
+/* ABOUT */
+
+.about-image {
+    width: 950px;
+}

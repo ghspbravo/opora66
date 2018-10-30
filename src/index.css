@@ -1,0 +1,37 @@
+@import 'bootstrap-grid.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+:root {
+    --main: #3382C5;
+    --main-dark: #213C6C;
+    --main-light: #45AAFF;
+    --acsent: #F35653;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container-fluid>.row {
+    margin-left: 0;
+    margin-right: 0;
+}
