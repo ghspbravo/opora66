@@ -6,6 +6,8 @@ import brand from './res/brand.png'
 
 import Banner from './components/Banner'
 import About from './components/About';
+import Progress from './components/Progress';
+import Publications from './components/Publications';
 
 class App extends Component {
 	render() {
@@ -30,6 +32,8 @@ class App extends Component {
 				</div>
 				<Banner />
 				<About />
+				<Progress />
+				<Publications />
 			</main>
 		);
 	}

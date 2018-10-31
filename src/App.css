@@ -12,12 +12,72 @@ section:not(.section-full) {
     background-color: var(--main-dark);
 }
 
-.section-dark p,h1,h2,a {
+.section-light {
+    background-color: var(--main-light);
+}
+
+.section-dark:not(.section-side-left) p,
+.section-light:not(.section-side-left) p,
+.section-dark:not(.section-side-left) h1,
+.section-light:not(.section-side-left) h1,
+.section-dark:not(.section-side-left) h2,
+.section-light:not(.section-side-left) h2,
+.section-dark:not(.section-side-left) a,
+.section-light:not(.section-side-left) a {
     color: white;
 }
 
 .section-side-left {
-    background: linear-gradient(90deg, var(--main) 25%, transparent 25%, white)
+    background: linear-gradient(90deg, var(--main) 25%, white 25%, white 75%)
+}
+
+.section-side-left.section-dark{
+    background: linear-gradient(90deg, var(--main-dark) 25%, white 25%, white 75%)
+}
+
+.title-left {
+    text-align: left;
+}
+
+.section-name {
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+}
+
+.section-description {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+section p {
+    font-style: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    background-color: #F07F84;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.title-center.section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 button {
@@ -131,4 +191,51 @@ button {
 
 .about-image {
     width: 950px;
+}
+
+.about-image img {
+    min-height: 523px;
+    object-fit: cover;
+}
+
+.progress-description {
+    text-align: center;
+}
+
+.progress-step {
+    position: relative;
+
+}
+
+.progress-step::after,
+.progress-step::before {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.progress-step::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 6px;
+    background-image: url(/wave.png);
+}
+
+.progress-step::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -30%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 40px;
+    background-image: url(/arrow-right.png);
+}
+
+.progress-step:last-child::after {
+    display: none;
 }
