@@ -31,7 +31,7 @@ section:not(.section-full) {
     background: linear-gradient(90deg, var(--main) 25%, white 25%, white 75%)
 }
 
-.section-side-left.section-dark{
+.section-side-left.section-dark {
     background: linear-gradient(90deg, var(--main-dark) 25%, white 25%, white 75%)
 }
 
@@ -80,7 +80,7 @@ section p {
     transform: translateX(-50%);
 }
 
-button {
+.button {
     padding: 20px 40px;
     background: none;
     border: none;
@@ -124,7 +124,25 @@ button {
     box-shadow: 0px 0px 100px rgba(30, 30, 31, 0.15);
 }
 
+.filter-item {
+    font-size: 16px;
+    border: none;
+    color: black;
+    padding: 10px 0;
+    margin: 5px 15px;
+}
+
+.filter-item.active {
+    border-bottom: 1px solid gray;
+    color: gray;
+}
+
+.filter-item.hover {
+    color: gray;
+}
+
 /* SECTIONS */
+
 /* HEADER */
 
 .header {
@@ -204,7 +222,6 @@ button {
 
 .progress-step {
     position: relative;
-
 }
 
 .progress-step::after,
@@ -238,4 +255,89 @@ button {
 
 .progress-step:last-child::after {
     display: none;
+}
+
+/* PUBLICATIONS */
+
+.publications-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 670px 670px;
+    grid-gap: 30px 30px;
+    grid-template-areas: "1 2 3" "4 5 6";
+}
+
+.publication-item {
+    background-size: cover;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.publication-item-1 {
+    display: grid;
+    grid-area: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px 320px;
+    grid-gap: 30px 1px;
+    grid-template-areas: "." ".";
+}
+
+.publication-item-2 {
+    display: grid;
+    grid-area: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px 320px;
+    grid-gap: 30px 1px;
+    grid-template-areas: "." ".";
+}
+
+.publication-item-5 {
+    display: grid;
+    grid-area: 5;
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px 320px;
+    grid-gap: 30px 1px;
+    grid-template-areas: "." ".";
+}
+
+.publication-item-6 {
+    display: grid;
+    grid-area: 6;
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px 320px;
+    grid-gap: 30px 1px;
+    grid-template-areas: "." ".";
+}
+
+.publication-item-4 {
+    grid-area: 4;
+}
+
+.publication-item-3 {
+    grid-area: 3;
+}
+
+.publication-item .publication-content {
+    height: 175px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 50px;
+}
+
+.publication-excerpt {
+    color: white;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.publication-link {
+    color: white;
+    text-decoration: none;
+}
+
+.publication-link:hover {
+    border-bottom: 1px solid white;
 }

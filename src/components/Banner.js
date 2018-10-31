@@ -10,8 +10,8 @@ export default class Banner extends Component {
                         <h1 className="banner-title">Опора России</h1>
                         <h2 className="banner-subtitle">Общероссийская общественная организация малого и среднего предпринимательства</h2>
                         <div className="row justify-content-center banner-controls">
-                            <button className="button-ghost">Подробнее</button>
-                            <button className="button-acsent">Вступить</button>
+                            <button className="button button-ghost">Подробнее</button>
+                            <button className="button button-acsent">Вступить</button>
                         </div>
                     </div>
                 </div>

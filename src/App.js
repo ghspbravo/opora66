@@ -10,6 +10,18 @@ import Progress from './components/Progress';
 import Publications from './components/Publications';
 
 class App extends Component {
+	componentDidMount() {
+		let filters = document.querySelectorAll('.filters')
+		filters.forEach(filter => filter.querySelectorAll('.filter-item').forEach(item => {
+			item.onmouseover = (e) => e.target.classList.add('hover')
+			item.onmouseleave = (e) => e.target && e.target.classList ? e.target.classList.remove('hover') : null
+			item.addEventListener('click', e => {
+				filter.querySelector('.active').classList.remove('active')
+				e.target.classList.add('active')
+			})
+		}))
+	}
+
 	render() {
 		return (
 			<main>
@@ -26,7 +38,7 @@ class App extends Component {
 							<a className="header-nav-item" href="#about">Члены правления</a>
 						</nav>
 						<div className="col-lg-2 header-controls">
-							<button className="button-acsent">Вступить</button>
+							<button className="button button-acsent">Вступить</button>
 						</div>
 					</div>
 				</div>
