@@ -8,6 +8,9 @@ import Banner from './components/Banner'
 import About from './components/About';
 import Progress from './components/Progress';
 import Publications from './components/Publications';
+import Map from './components/Map';
+import Management from './components/Management';
+import Reviews from './components/Reviews';
 
 class App extends Component {
 	componentDidMount() {
@@ -46,6 +49,9 @@ class App extends Component {
 				<About />
 				<Progress />
 				<Publications />
+				<Map />
+				<Management />
+				<Reviews />
 			</main>
 		);
 	}

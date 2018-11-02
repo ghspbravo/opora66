@@ -16,6 +16,10 @@ section:not(.section-full) {
     background-color: var(--main-light);
 }
 
+.section-acsent-light {
+    background-color: var(--acsent-light);
+}
+
 .section-dark:not(.section-side-left) p,
 .section-light:not(.section-side-left) p,
 .section-dark:not(.section-side-left) h1,
@@ -27,12 +31,17 @@ section:not(.section-full) {
     color: white;
 }
 
+.section-dark .section-title .section-name,
+.section-dark .section-title .section-description {
+    color: white;
+}
+
 .section-side-left {
-    background: linear-gradient(90deg, var(--main) 25%, white 25%, white 75%)
+    background: linear-gradient(90deg, var(--main) 25%, white 25%)
 }
 
 .section-side-left.section-dark {
-    background: linear-gradient(90deg, var(--main-dark) 25%, white 25%, white 75%)
+    background: linear-gradient(90deg, var(--main-dark) 25%, white 25%)
 }
 
 .title-left {
@@ -66,7 +75,7 @@ section p {
     text-align: center;
 }
 
-.section-title::after {
+.section-title:not(.section-title-simplified)::after {
     content: '';
     background-color: #F07F84;
     height: 1px;
@@ -139,6 +148,11 @@ section p {
 
 .filter-item.hover {
     color: gray;
+}
+
+.filter-item:focus {
+    outline: none;
+    border-bottom: 1px solid gray;
 }
 
 /* SECTIONS */
@@ -259,65 +273,13 @@ section p {
 
 /* PUBLICATIONS */
 
-.publications-container {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 370px 370px 370px;
-    grid-template-rows: 670px 670px;
-    grid-gap: 30px 30px;
-    grid-template-areas: "1 2 3" "4 5 6";
-}
-
 .publication-item {
     background-size: cover;
-    margin: 15px;
+    background-position: center;
+    margin: 30px 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-.publication-item-1 {
-    display: grid;
-    grid-area: 1;
-    grid-template-columns: 1fr;
-    grid-template-rows: 320px 320px;
-    grid-gap: 30px 1px;
-    grid-template-areas: "." ".";
-}
-
-.publication-item-2 {
-    display: grid;
-    grid-area: 2;
-    grid-template-columns: 1fr;
-    grid-template-rows: 320px 320px;
-    grid-gap: 30px 1px;
-    grid-template-areas: "." ".";
-}
-
-.publication-item-5 {
-    display: grid;
-    grid-area: 5;
-    grid-template-columns: 1fr;
-    grid-template-rows: 320px 320px;
-    grid-gap: 30px 1px;
-    grid-template-areas: "." ".";
-}
-
-.publication-item-6 {
-    display: grid;
-    grid-area: 6;
-    grid-template-columns: 1fr;
-    grid-template-rows: 320px 320px;
-    grid-gap: 30px 1px;
-    grid-template-areas: "." ".";
-}
-
-.publication-item-4 {
-    grid-area: 4;
-}
-
-.publication-item-3 {
-    grid-area: 3;
 }
 
 .publication-item .publication-content {
@@ -340,4 +302,157 @@ section p {
 
 .publication-link:hover {
     border-bottom: 1px solid white;
+}
+
+.publication-compact {
+    width: 370px;
+    height: 320px;
+}
+
+.publication-large {
+    width: 370px;
+    height: 670px;
+}
+
+/* EMPLOYER MAP */
+
+.map-privilege {
+    margin: 15px;
+}
+
+.privilege-icon {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 0.8px solid #0062A8;
+    box-sizing: border-box;
+    box-shadow: 0px 3.2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.privilege-description {
+    font-size: 11px;
+    color: var(--main-dark);
+    text-align: center;
+}
+
+.map-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 300px;
+    max-width: 800px;
+    width: 50vw;
+}
+
+/* MANAGEMENT */
+
+.management-card {
+    width: 270px;
+    height: 275px;
+    margin: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.management-card:first-child {
+    margin-left: 0;
+}
+
+.management-leader-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.management-leader-description {
+    margin-top: 7vh;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.management-info {
+    background: rgba(0, 0, 0, 0.5);
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.management-info .management-name {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.management-info .management-post {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+/* ACHIEVES | REVIEWS */
+
+.achieve-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.achieve-number {
+    font-size: 42px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.achieve-description {
+    font-size: 16px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.achievement-item {
+    padding: 50px 60px;
+    border: 1px solid lightgray;
+}
+
+.author-photo {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+}
+
+.author-name {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.author-occupation {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.review-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.rewievs-wrapper {
+    padding: 0 20%;
+}
+
+.author-social-item {
+    margin: 5px;
 }

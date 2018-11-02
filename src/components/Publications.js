@@ -17,43 +17,78 @@ export default class Publications extends Component {
                         <button className="filter-item">Фото и видео</button>
                         <button className="filter-item">Особое мнение</button>
                     </div>
-                    <div className="publications-container" style={{ marginTop: '60px' }}>
-                        <div class="publication-item-1">
-                            <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">1Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
+                    <div className="row">
+                        <div className="publications-container row" style={{ marginTop: '60px' }}>
+                            <div className="flex-column">
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">2 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-large" style={{ backgroundImage: 'url(https://via.placeholder.com/370x670)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">3 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">2Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
+                            <div className="flex-column">
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">4 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">5 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">7 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">8 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex-column">
+                                <div className="publication-item publication-large" style={{ backgroundImage: 'url(https://via.placeholder.com/370x670)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">6 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">9 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
+                                </div>
+                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                    <div className="publication-content">
+                                        <p className="publication-excerpt">10 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                        <a className="publication-link" href="">Читать</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="publication-item-3">
-                            <div className="publication-item publication-large" style={{ backgroundImage: 'url(https://via.placeholder.com/370x670)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">3Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="publication-item-2">
-                            <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">4Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                            <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">5Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button style={{marginTop: '40px'}} className="button button-light">Узнать больше</button>
                     </div>
                 </div>
             </section>
