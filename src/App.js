@@ -11,6 +11,11 @@ import Publications from './components/Publications';
 import Map from './components/Map';
 import Management from './components/Management';
 import Reviews from './components/Reviews';
+import Steps from './components/Steps';
+import Payments from './components/Payments';
+import Partners from './components/Partners';
+import Contacts from './components/Contacts';
+import Adress from './components/Adress';
 
 class App extends Component {
 	componentDidMount() {
@@ -52,6 +57,11 @@ class App extends Component {
 				<Map />
 				<Management />
 				<Reviews />
+				<Steps />
+				<Payments />
+				<Partners />
+				<Contacts />
+				<Adress />
 			</main>
 		);
 	}

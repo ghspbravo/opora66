@@ -32,6 +32,10 @@ button {
     cursor: pointer;
 }
 
+textarea {
+    resize: vertical;
+}
+
 .container-fluid {
     padding-left: 5%;
     padding-right: 5%;
