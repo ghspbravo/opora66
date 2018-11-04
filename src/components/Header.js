@@ -53,9 +53,11 @@ export default class Header extends Component {
 					<div className="col col-lg-2 header-controls d-none d-md-block">
 						<button className="button button-acsent">Вступить</button>
 					</div>
-					<button onClick={this.handleMobileNavOpen} className="col col-md-1 d-flex justify-content-end col-md d-lg-none mobile-burger">
-						<img src={burger} alt="menu" />
-					</button>
+					<div className="col col-md-1 d-flex justify-content-end col-md d-lg-none mobile-burger-wrapper">
+						<button onClick={this.handleMobileNavOpen} className="mobile-burger">
+							<img src={burger} alt="menu" />
+						</button>
+					</div>
 				</div>
 			</header>
 		)

@@ -2,6 +2,7 @@
 
 .section-full {
     height: calc(100vh - 100px);
+    min-height: 500px;
 }
 
 section:not(.section-full) {
@@ -168,7 +169,7 @@ section p {
 header {
     height: 100px;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: white;
     z-index: 8;
@@ -228,12 +229,22 @@ header {
     border-bottom: 1px solid black;
 }
 
+.mobile-burger {
+    background: none;
+    border: none;
+    outline: none;
+}
+
 .mobile-burger img {
     width: 35px;
     height: 35px;
 }
 
 /* BANNER */
+
+#banner {
+    margin-top: 100px;
+}
 
 #banner .banner-subtitle {
     text-align: center;
@@ -292,7 +303,7 @@ header {
     transform: translateX(-50%);
     width: 36px;
     height: 6px;
-    background-image: url(/wave.png);
+    background-image: url('wave.png');
 }
 
 .progress-step::after {
@@ -303,7 +314,7 @@ header {
     transform: translateY(-50%);
     width: 20px;
     height: 40px;
-    background-image: url(/arrow-right.png);
+    background-image: url('arrow-right.png');
 }
 
 .progress-step:last-child::after {
@@ -540,7 +551,7 @@ header {
     transform: translateY(-50%);
     width: 20px;
     height: 40px;
-    background-image: url(/arrow-right.png);
+    background-image: url('arrow-right.png');
     position: absolute;
     top: 50%;
     right: -30%;
@@ -598,11 +609,6 @@ header {
 }
 
 /* PARTNERS */
-
-/* #partners .slick-initialized .slick-slide {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 .partner-item {
     width: 220px !important;
@@ -810,7 +816,7 @@ footer {
     }
 
     .nav-mobile {
-        width: 45vw;
+        width: 65vw;
     }
     
     .management-leader-photo {

@@ -11,7 +11,7 @@ export default class Banner extends Component {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
                 }}>
-                <div className="d-flex align-items-center justify-content-center" style={{height: 'inherit', backgroundColor: 'rgba(0, 0, 0, 0.33)',}}>
+                <div className="d-flex align-items-center justify-content-center" style={{height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.33)',}}>
                     <div className="section-content d-flex flex-column align-items-center">
                         <img className="banner-logo" src={logo} alt="logo"/>
                         <h1 style={{marginTop: '20px'}} className="banner-title">Общероссийская общественная организация малого и среднего предпринимательства</h1>
