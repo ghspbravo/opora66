@@ -119,7 +119,7 @@ export default class Publications extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div className="row justify-content-center">
                         <button style={{ marginTop: '40px' }} className="button button-light">Посмотреть все</button>
                     </div>
                 </div>

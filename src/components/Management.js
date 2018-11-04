@@ -7,7 +7,7 @@ export default class Management extends Component {
     render() {
         return (
             <section id="management">
-                <div class="container section-content">
+                <div className="container section-content">
                     <div className="section-title title-center">
                         <h1 className="section-name">Мы лучшая команда</h1>
                         <h2 className="section-description">Члены правления</h2>

@@ -7,8 +7,8 @@ export default class Footer extends Component {
 	render() {
 		return (
 			<footer style={{ backgroundColor: '#1A1A26' }}>
-				<div class="container footer-content">
-					<div class="row">
+				<div className="container footer-content">
+					<div className="row">
 						<div className="col-sm-6">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">Опора</h2>

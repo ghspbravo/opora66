@@ -799,6 +799,9 @@ footer {
 
 /* SM */
 @media(max-width: 568px) {
+    .header-brand {
+        width: 200px;
+    }
     .section-side-left {
         background: linear-gradient(to bottom, var(--main) 15%, white 15%)
     }

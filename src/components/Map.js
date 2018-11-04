@@ -11,9 +11,9 @@ export default class Map extends Component {
     render() {
         return (
             <section id="map" className="section-acsent-light">
-                <div class="container" style={{ marginRight: '' }}>
+                <div className="container" style={{ marginRight: '' }}>
                     <div className="row">
-                        <div class="col-lg-6 section-content">
+                        <div className="col-lg-6 section-content">
                             <div className="section-title title-left">
                                 <h1 className="section-name">Особенности</h1>
                                 <h2 className="section-description">Карта предпринимателя</h2>
@@ -65,7 +65,7 @@ export default class Map extends Component {
                             </div>
                             <button style={{marginTop: '40px'}} className="button button-light d-lg-block d-none">Приобрести</button>
                         </div>
-                        <div class="col-lg-6 d-flex flex-column align-items-center" style={{marginTop: '20px'}}>
+                        <div className="col-lg-6 d-flex flex-column align-items-center" style={{marginTop: '20px'}}>
                             <img className="map-image" src={map} alt="employerMap" />
                             <button style={{marginTop: '40px'}} className="button button-light d-lg-none">Приобрести</button>
                         </div>

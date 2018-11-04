@@ -6,7 +6,7 @@ export default class Steps extends Component {
     render() {
         return (
             <section id="#steps" className="section-acsent">
-                <div class="container-fluid section-content">
+                <div className="container-fluid section-content">
                     <div className="d-lg-flex d-none row no-gutters steps-wrapper justify-content-center">
                         <div className="step d-flex align-items-center justify-content-center">
                             <p className="step-content">Вступи в Опору России</p>

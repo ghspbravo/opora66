@@ -7,7 +7,7 @@ export default class Progress extends Component {
         return (
             <section id="progress" className="section-light">
                 <div className="container-fluid section-content">
-                    <div class="row">
+                    <div className="row">
                         <img src={tablet_arrow} alt="" className="col-md-1 col-2 d-lg-none" />
                         <div className="row col-lg-12 col-md-11 col-9 progress-wrapper">
                             <div className="col-lg col-12 progress-step">

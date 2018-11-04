@@ -33,7 +33,7 @@ export default class Contacts extends Component {
                                         <input className="contact-input-item" type="text" placeholder="Тема" />
                                     </div>
                                 </div>
-                                <div class="row contact-input-row no-gutters">
+                                <div className="row contact-input-row no-gutters">
                                     <textarea className="contact-input-text" name="comment" id="comment" rows="2" placeholder="Я хотел бы обсудить" />
                                 </div>
                                 <button style={{marginTop: '50px'}} className="button button-light">Отправить</button>

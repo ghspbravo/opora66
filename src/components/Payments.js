@@ -11,7 +11,7 @@ export default class Payments extends Component {
                     </div>
                     <div className="row justify-content-center payments-wrapper">
                         <div className="payment-item">
-                            <div class="payment-header">
+                            <div className="payment-header">
                                 <h3 className="payment-name">Стандартный</h3>
                                 <p className="payment-price">5000Р <span>/ год</span></p>
                             </div>
@@ -25,7 +25,7 @@ export default class Payments extends Component {
                                     <p className="payment-content-list-item">Что включено в пакет</p>
                                     <p className="payment-content-list-item">Что включено в пакет</p>
                                 </div>
-                                <div style={{marginTop: '50px'}} class="payment-accept-button d-flex justify-content-center">
+                                <div style={{marginTop: '50px'}} className="payment-accept-button d-flex justify-content-center">
                                     <button className="button button-light">Вступить</button>
                                 </div>
                             </div>

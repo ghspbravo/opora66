@@ -29,8 +29,8 @@ export default class Header extends Component {
 
 	render() {
 		return (
-			<header div className="container-fluid">
-				<div className="row align-items-center header ">
+			<header className="container-fluid">
+				<div className="row align-items-center header">
 					<div className="header-brand">
 						<img src={brand} alt="brand name" />
 					</div>
@@ -42,7 +42,7 @@ export default class Header extends Component {
 						<a className="header-nav-item" href="#management">Члены правления</a>
 					</nav>
 					<nav className="d-lg-none nav-mobile-wrapper" onClick={this.handleMobileNavClose}>
-						<div class="nav-mobile">
+						<div className="nav-mobile">
 							<a className="header-nav-mobile-item" href="#about">О нас</a>
 							<a className="header-nav-mobile-item" href="#publications">Новости</a>
 							<a className="header-nav-mobile-item" href="#map">Проекты</a>
