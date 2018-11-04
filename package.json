@@ -1,6 +1,7 @@
 {
   "name": "opora66",
   "version": "0.1.0",
+  "homepage": "http://ghspbravo.github.io/opora66",
   "private": true,
   "dependencies": {
     "normalize.css": "^8.0.0",
