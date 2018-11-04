@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "da9811e483f51ce2db34",
-    "url": "/opora66/static/css/main.c20269c9.chunk.css"
+    "revision": "85510c7b49230bc24a7d",
+    "url": "/opora66/static/css/main.3b913d54.chunk.css"
   },
   {
-    "revision": "da9811e483f51ce2db34",
-    "url": "/opora66/static/js/main.da9811e4.chunk.js"
+    "revision": "85510c7b49230bc24a7d",
+    "url": "/opora66/static/js/main.85510c7b.chunk.js"
   },
   {
     "revision": "59ad5213268304ea3b9e",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/opora66/static/media/burger.86595150.svg"
   },
   {
-    "revision": "de8ba2e30d3d0bf5cdf89b1e16c1399c",
+    "revision": "ac60aa88d2e1396b45328b8222e1e86c",
     "url": "/opora66/index.html"
   }
 ];
