@@ -15,17 +15,24 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 img {
     width: 100%;
     height: auto;
     user-select: none;
+}
+
+form input,
+form textarea {
+    outline: none;
 }
 
 button {
@@ -44,4 +51,20 @@ textarea {
 .container-fluid>.row {
     margin-left: 0;
     margin-right: 0;
+}
+
+/* VENDOR */
+
+.slick-dots li.slick-active button:before {
+    background-color: #5CAFE2;
+}
+
+.slick-dots li button:before {
+    content: '';
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.slick-dots {
+    bottom: -50px;
 }

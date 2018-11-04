@@ -32,8 +32,8 @@ section:not(.section-full) {
 .section-light:not(.section-side-left) h2,
 .section-dark:not(.section-side-left) a,
 .section-light:not(.section-side-left) a,
-.section-dark .section-title .section-name,
-.section-dark .section-title .section-description {
+.section-dark:not(.section-side-left)  .section-title .section-name,
+.section-dark:not(.section-side-left)  .section-title .section-description {
     color: white;
 }
 
@@ -61,7 +61,7 @@ section:not(.section-full) {
 }
 
 section p {
-    font-style: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -85,7 +85,7 @@ section p {
     bottom: 0;
 }
 
-.section-dark .section-title::after {
+.section-dark:not(.section-side-left) .section-title::after {
     background-color: white;
 }
 
@@ -144,6 +144,7 @@ section p {
     color: black;
     padding: 10px 0;
     margin: 5px 15px;
+    background: none;
 }
 
 .filter-item.active {
@@ -164,10 +165,13 @@ section p {
 
 /* HEADER */
 
-.header {
+header {
     height: 100px;
     overflow: hidden;
     position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 8;
 }
 
 .header-brand {
@@ -192,28 +196,58 @@ section p {
     text-align: end;
 }
 
+.nav-mobile-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+    z-index: 10;
+}
+
+.nav-mobile {
+    position: fixed;
+    left: -30vw;
+    top: 0;
+    width: 30vw;
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    transition: left 0.3s ease-out;
+}
+
+.header-nav-mobile-item {
+    display: block;
+    padding: 20px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.mobile-burger img {
+    width: 35px;
+    height: 35px;
+}
+
 /* BANNER */
 
-#banner .banner-slogan,
-#banner .banner-title,
 #banner .banner-subtitle {
     text-align: center;
 }
 
-.banner-title {
-    font-size: 60px;
-    font-weight: 300;
-    text-transform: uppercase;
+.banner-logo {
+    width: 425px;
+    height: 170px;
 }
 
-.banner-subtitle {
+.banner-title {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
-}
-
-.banner-slogan {
-    font-size: 18px;
 }
 
 .banner-controls {
@@ -231,7 +265,7 @@ section p {
 }
 
 .about-image img {
-    min-height: 523px;
+    /* min-height: 523px; */
     object-fit: cover;
 }
 
@@ -403,6 +437,10 @@ section p {
     margin-top: 5px;
 }
 
+.management-leader-photo {
+    margin-right: 24px;
+}
+
 /* ACHIEVES | REVIEWS */
 
 .achieve-icon {
@@ -421,6 +459,7 @@ section p {
     font-size: 16px;
     color: gray;
     margin-top: 10px;
+    text-align: center;
 }
 
 .achievement-item {
@@ -432,6 +471,8 @@ section p {
     width: 83px;
     height: 83px;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .author-name {
@@ -454,12 +495,17 @@ section p {
     line-height: 2;
 }
 
-.rewievs-wrapper {
+.review-item {
     padding: 0 20%;
 }
 
 .author-social-item {
     margin: 5px;
+}
+
+.achievments-wrapper {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* STEPS */
@@ -553,8 +599,13 @@ section p {
 
 /* PARTNERS */
 
+/* #partners .slick-initialized .slick-slide {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
 .partner-item {
-    width: 220px;
+    width: 220px !important;
     height: 100px;
     background-color: white;
     border-radius: 20px;
@@ -595,4 +646,198 @@ section p {
     text-align: center;
     font-size: 14px;
     line-height: 2;
+}
+
+/* FOOTER */
+footer {
+    padding: 75px 0 20px 0;
+}
+
+.footer-title-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.footer-title-wrapper::after {
+    content: '';
+    width: 42px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+}
+
+.footer-title {
+    font-size: 24px;
+    color: white;
+}
+
+.footer-links-item {
+    margin: 15px 0;
+}
+
+.footer-links-item-link {
+    color: darkgray;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.footer-links-item:hover {
+    text-decoration: underline;
+}
+
+.footer-letter-input-submit-button,
+.footer-letter-input-field {
+    background: none;
+    border: none;
+    padding: 0 0 10px 0;
+}
+
+.footer-letter-input-field {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-letter-input-submit-button img {
+    width: 20px;
+    height: 15px;
+    margin-left: auto;
+    display: block;
+}
+
+.footer-letter-input {
+    border-bottom: 2px solid white;
+}
+
+.footer-social-item {
+    margin: 0 10px;
+}
+
+.footer-credits-text {
+    color: #75757D;
+    font-size: 14px;
+}
+
+.footer-credits-text span {
+    color: white;
+}
+
+.footer-credits-text.contact {
+    text-align: right;
+}
+
+/* XL */
+@media(max-width: 1440px) {
+    .progress-description {
+        font-size: 14px;
+    }
+
+    .step {
+        margin: 0 40px;
+        width: 200px;
+    }
+
+    .step:after {
+        right: -25%;
+    }
+}
+
+/* LG */
+@media(max-width: 1200px) {
+    .publication-item {
+        min-height: 320px;
+        padding: 0;
+    }
+
+    .publication-item .publication-content {
+        padding: 0 50px;
+    }
+}
+
+/* MD */
+@media(max-width: 992px) {
+    .section-side-left.section-dark {
+        background: linear-gradient(to bottom, var(--main-dark) 45%, white 45%)
+    }
+    .section-side-left {
+        background: linear-gradient(to bottom, var(--main) 45%, white 45%)
+    }
+
+    .progress-step {
+        margin: 30px 0;
+    }
+
+    .progress-step::after {
+        display: none;
+    }
+ 
+    .map-image {
+        position: relative;
+    }
+    .step {
+        margin: 20px 0;
+    }
+
+    .step:after {
+        display: none;
+    }
+    .footer-credits-text,
+    .footer-credits-text.contact {
+        text-align: center;
+    }
+}
+
+/* SM */
+@media(max-width: 568px) {
+    .section-side-left {
+        background: linear-gradient(to bottom, var(--main) 15%, white 15%)
+    }
+    .section-side-left.section-dark {
+        background: linear-gradient(to bottom, var(--main-dark) 15%, white 15%)
+    }
+    .banner-logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-content {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .nav-mobile {
+        width: 45vw;
+    }
+    
+    .management-leader-photo {
+        margin-right: 0;
+    }
+
+    .review-item {
+        padding: 0;
+    }
+
+    .contact-input-row input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        padding: 20px 30px;
+    }
+
+    .publication-item .publication-content {
+        padding: 0 10px;
+    }
+    .achieve-number {
+        font-size: 32px;
+    }
+
+    .payment-item {
+        width: 280px;
+    }
 }

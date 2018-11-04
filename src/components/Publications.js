@@ -18,7 +18,7 @@ export default class Publications extends Component {
                         <button className="filter-item">Особое мнение</button>
                     </div>
                     <div className="row">
-                        <div className="publications-container row" style={{ marginTop: '60px' }}>
+                        <div className="publications-container row d-xl-flex d-none" style={{ marginTop: '60px' }}>
                             <div className="flex-column">
                                 <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
                                     <div className="publication-content">
@@ -86,9 +86,41 @@ export default class Publications extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="publication-mobile-container row justify-content-center d-xl-none" style={{ marginTop: '60px' }}>
+                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                <div className="publication-content">
+                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                    <a className="publication-link" href="">Читать</a>
+                                </div>
+                            </div>
+                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                <div className="publication-content">
+                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                    <a className="publication-link" href="">Читать</a>
+                                </div>
+                            </div>
+                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                <div className="publication-content">
+                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                    <a className="publication-link" href="">Читать</a>
+                                </div>
+                            </div>
+                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                <div className="publication-content">
+                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                    <a className="publication-link" href="">Читать</a>
+                                </div>
+                            </div>
+                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
+                                <div className="publication-content">
+                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
+                                    <a className="publication-link" href="">Читать</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row justify-content-center">
-                        <button style={{marginTop: '40px'}} className="button button-light">Узнать больше</button>
+                        <button style={{ marginTop: '40px' }} className="button button-light">Посмотреть все</button>
                     </div>
                 </div>
             </section>

@@ -18,18 +18,18 @@ export default class Contacts extends Component {
                             </div>
                             <form id='contact-form' action="post">
                                 <div className="row contact-input-row">
-                                    <div className="col-lg-6">
+                                    <div className="col-sm-6">
                                         <input className="contact-input-item" type="text" placeholder="Имя"/>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-sm-6">
                                         <input className="contact-input-item" type="text" placeholder="Email" />
                                     </div>
                                 </div>
                                 <div className="row contact-input-row">
-                                    <div className="col-lg-6">
+                                    <div className="col-sm-6">
                                         <input className="contact-input-item" type="text" placeholder="Телефон"/>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-sm-6">
                                         <input className="contact-input-item" type="text" placeholder="Тема" />
                                     </div>
                                 </div>

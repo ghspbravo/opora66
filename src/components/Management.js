@@ -21,10 +21,13 @@ export default class Management extends Component {
                     </div>
                     <div style={{ marginTop: '50px' }} className="managements-wrapper">
                         <div className="row no-gutters management-leader">
-                            <div style={{margin: 0, marginRight: '24px', marginBottom: '50px'}} class="management-leader-photo management-card">
+                            <div style={{ marginBottom: '50px'}} className="d-none d-md-block management-leader-photo management-card">
                                 <img src={management_leader} alt="photo" />
                             </div>
-                            <div className="col-12 col-lg-8 management-leader-info">
+                            <div className="col-12 d-md-none d-flex justify-content-center">
+                                <img src={management_leader} alt="photo" className="management-card" />
+                            </div>
+                            <div className="col col-lg-8 management-leader-info">
                                 <h3 className="management-leader-name">Калинин Александр Сергеевич</h3>
                                 <p className="management-leader-description">
                                     Президент Общероссийской общественной организации малого и среднего предпринимательства «ОПОРА РОССИИ». Президент Ассоциации "Некоммерческое партнерство Объединение предпринимательских организаций «ОПОРА»

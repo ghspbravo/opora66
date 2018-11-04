@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import 'normalize.css'
 import './App.css';
 
-import brand from './res/brand.png'
-
 import Banner from './components/Banner'
 import About from './components/About';
 import Progress from './components/Progress';
@@ -16,6 +14,8 @@ import Payments from './components/Payments';
 import Partners from './components/Partners';
 import Contacts from './components/Contacts';
 import Adress from './components/Adress';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 class App extends Component {
 	componentDidMount() {
@@ -33,23 +33,7 @@ class App extends Component {
 	render() {
 		return (
 			<main>
-				<div className="container-fluid">
-					<div className="row align-items-center header">
-						<div className="header-brand">
-							<img src={brand} alt="brand name"/>
-						</div>
-						<nav className="col row justify-content-center header-nav">
-							<a className="header-nav-item" href="#about">О нас</a>
-							<a className="header-nav-item" href="#about">Новости</a>
-							<a className="header-nav-item" href="#about">Проекты</a>
-							<a className="header-nav-item" href="#about">Контакты</a>
-							<a className="header-nav-item" href="#about">Члены правления</a>
-						</nav>
-						<div className="col-lg-2 header-controls">
-							<button className="button button-acsent">Вступить</button>
-						</div>
-					</div>
-				</div>
+				<Header />
 				<Banner />
 				<About />
 				<Progress />
@@ -62,6 +46,7 @@ class App extends Component {
 				<Partners />
 				<Contacts />
 				<Adress />
+				<Footer />
 			</main>
 		);
 	}

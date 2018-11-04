@@ -63,10 +63,11 @@ export default class Map extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <button style={{marginTop: '40px'}} className="button button-light">Приобрести</button>
+                            <button style={{marginTop: '40px'}} className="button button-light d-lg-block d-none">Приобрести</button>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex flex-column align-items-center" style={{marginTop: '20px'}}>
                             <img className="map-image" src={map} alt="employerMap" />
+                            <button style={{marginTop: '40px'}} className="button button-light d-lg-none">Приобрести</button>
                         </div>
                     </div>
                 </div>
