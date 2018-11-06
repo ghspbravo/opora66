@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import burger from '../res/burger.svg'
-import brand from '../res/brand.png'
+import brand from '../res/brand.jpg'
 
 export default class Header extends Component {
 	handleMobileNavOpen = (e) => {
