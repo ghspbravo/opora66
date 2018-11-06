@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import partner from '../res/partner-1.png'
-import video from '../res/partners-video.png'
 
 export default class Partners extends Component {
     render() {
@@ -60,7 +59,7 @@ export default class Partners extends Component {
                             </div>
                         </section>
                         <div className="col-lg-5 d-flex flex-column align-items-center justify-content-center">
-                            <img src={video} alt="" />
+                            <iframe title='opora' width="100%" height="100%" src="https://www.youtube.com/embed/7Qhz-HzyhUs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
