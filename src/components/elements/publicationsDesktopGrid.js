@@ -6,7 +6,7 @@ export default function publicationsDesktopGrid(publications, gridsCount) {
 	return (
 		<div className="publications-container row d-xl-flex d-none" style={{ marginTop: '60px' }}>
 			{publications
-				? gridsCount.map((data, index) => <div key={index} className="publications-container row d-xl-flex d-none" style={{ marginTop: '60px' }}>
+				? gridsCount.map((data, index) => <div key={index} className="publications-container no-gutters row d-xl-flex d-none" style={{ marginTop: '60px' }}>
 					<div className="flex-column">
 						{publications[0 + 10 * index]
 							? <div className="publication-item publication-compact" style={{ backgroundImage: `url(${publications[0]._embedded['wp:featuredmedia'][0].source_url})` }}>
