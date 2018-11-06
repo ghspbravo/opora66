@@ -14,51 +14,104 @@ export default class Partners extends Component {
                                     <div className="section-name">Мы строим доверие</div>
                                     <div className="section-description">Наши партнеры</div>
                                 </div>
-                                <div className="partners-wrapper">
-                                    <div className="row d-flex no-gutters partners-list justify-content-center">
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                {window.innerwidth > 1200
+                                    ? <div className="partners-wrapper">
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
-                                        </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
-                                        </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
-                                        </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
-                                        </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="row d-flex no-gutters partners-list justify-content-center">
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                    : <div className="partners-wrapper">
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
-                                        <div className="partner-item d-flex align-content-center justify-items-center">
-                                            <img src={partner} alt="partner logo" />
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <img src={partner} alt="partner logo" />
+                                            </div>
                                         </div>
+
                                     </div>
-                                </div>
+                                }
                             </div>
                         </section>
-                        <div className="col-lg-5 d-flex flex-column align-items-center justify-content-center">
+                        <div className="col-lg-5 d-flex flex-column align-items-center justify-content-center partners-video">
                             <iframe title='opora' width="100%" height="100%" src="https://www.youtube.com/embed/7Qhz-HzyhUs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>

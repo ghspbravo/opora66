@@ -6,8 +6,8 @@ export default class Contacts extends Component {
             <section id="contacts" className="section-side-left">
                 <div className="section-content container">
                     <div className="row">
-                        <div className="col-lg-6 image-bordered">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8779a0f33347ba79c54110610d651007b6c11ce7ac56ad7dc8284be4b6e54611&amp;source=constructor" width="570" height="620" frameborder="0"></iframe>
+                        <div className="col-lg-6 image-bordered contacts-map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8779a0f33347ba79c54110610d651007b6c11ce7ac56ad7dc8284be4b6e54611&amp;source=constructor" width="100%" height="100%" frameBorder="0"></iframe>
                         </div>
                         <div className="col-lg-6">
                             <div className="section-title">

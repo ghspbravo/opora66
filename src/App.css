@@ -264,7 +264,8 @@ header {
 }
 
 .banner-logo {
-    width: 425px;
+    /* width: 425px; */
+    width: 30%;
     height: 170px;
     object-fit: cover;
 }
@@ -287,10 +288,11 @@ header {
 
 .about-image {
     width: 950px;
+    padding-right: 50px;
 }
 
 .about-image img {
-    /* min-height: 523px; */
+    min-height: 300px;
     object-fit: cover;
 }
 
@@ -424,6 +426,7 @@ header {
     background-position: center;
     background-size: cover;
     position: relative;
+    object-fit: cover;
 }
 
 .management-card:first-child {
@@ -638,6 +641,10 @@ header {
     object-fit: contain;
 }
 
+.partners-video {
+    min-height: 300px;
+}
+
 /* CONTACTS */
 
 .contact-input-row {
@@ -650,6 +657,10 @@ header {
     width: 100%;
     border: 1px solid #ECECEC;
     padding: 15px;
+}
+
+.contacts-map {
+    min-height: 350px
 }
 
 /* ADRESS */
@@ -776,6 +787,10 @@ footer {
     .publication-item .publication-content {
         padding: 0 30px;
     }
+
+    .about-image {
+        padding-right: 0;
+    }
 }
 
 /* MD */
@@ -823,7 +838,7 @@ footer {
         background: linear-gradient(to bottom, var(--main-dark) 15%, white 15%)
     }
     .banner-logo {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 
