@@ -15,30 +15,30 @@ export default class Footer extends Component {
 							</div>
 							<div className="footer-links d-none d-md-flex flex-column">
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 							</div>
 							<div className="footer-links d-flex d-md-none">
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="">Опора</a>
+									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 							</div>
 						</div>
@@ -57,16 +57,16 @@ export default class Footer extends Component {
 								</div>
 							</form>
 							<div className="row footer-social" style={{ marginTop: '25px' }}>
-								<a className="footer-social-item" href="">
+								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
 									<img src={social} alt="facebook" className="footer-social-item-icon" />
 								</a>
-								<a className="footer-social-item" href="">
+								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
 									<img src={social} alt="facebook" className="footer-social-item-icon" />
 								</a>
-								<a className="footer-social-item" href="">
+								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
 									<img src={social} alt="facebook" className="footer-social-item-icon" />
 								</a>
-								<a className="footer-social-item" href="">
+								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
 									<img src={social} alt="facebook" className="footer-social-item-icon" />
 								</a>
 							</div>

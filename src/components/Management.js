@@ -77,10 +77,10 @@ export default class Management extends Component {
                         {this.state.president
                             ? <div className="row no-gutters management-leader">
                                 <div style={{ marginBottom: '50px' }} className="d-none d-md-block management-leader-photo management-card">
-                                    <img src={this.state.president._embedded['wp:featuredmedia'][0].source_url} alt="photo" />
+                                    <img src={this.state.president._embedded['wp:featuredmedia'][0].source_url} alt="person" />
                                 </div>
                                 <div className="col-12 d-md-none d-flex justify-content-center">
-                                    <img src={this.state.president._embedded['wp:featuredmedia'][0].source_url} alt="photo" className="management-card" />
+                                    <img src={this.state.president._embedded['wp:featuredmedia'][0].source_url} alt="person" className="management-card" />
                                 </div>
                                 <div className="col col-lg-8 management-leader-info">
                                     <h3 className="management-leader-name">{this.state.president.title.rendered}</h3>
@@ -98,26 +98,11 @@ export default class Management extends Component {
                                     </div>
                                 </div>)
                                 : <div style={{ backgroundColor: 'lightgray' }} className="management-card">
-                                    <div className="management-info">
-                                        <h3 className="management-name"></h3>
-                                        <p className="management-post"></p>
-                                    </div>
-                                    <div className="management-info">
-                                        <h3 className="management-name"></h3>
-                                        <p className="management-post"></p>
-                                    </div>
-                                    <div className="management-info">
-                                        <h3 className="management-name"></h3>
-                                        <p className="management-post"></p>
-                                    </div>
-                                    <div className="management-info">
-                                        <h3 className="management-name"></h3>
-                                        <p className="management-post"></p>
-                                    </div>
-                                    <div className="management-info">
-                                        <h3 className="management-name"></h3>
-                                        <p className="management-post"></p>
-                                    </div>
+                                    <div className="management-info"></div>
+                                    <div className="management-info"></div>
+                                    <div className="management-info"></div>
+                                    <div className="management-info"></div>
+                                    <div className="management-info"></div>
                                 </div>
                             }
                         </div>
