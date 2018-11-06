@@ -1,10 +1,10 @@
 {
   "main.css": "/opora66/static/css/main.de165819.chunk.css",
-  "main.js": "/opora66/static/js/main.f9949b90.chunk.js",
-  "main.js.map": "/opora66/static/js/main.f9949b90.chunk.js.map",
+  "main.js": "/opora66/static/js/main.b6716af8.chunk.js",
+  "main.js.map": "/opora66/static/js/main.b6716af8.chunk.js.map",
   "static/css/1.124754a1.chunk.css": "/opora66/static/css/1.124754a1.chunk.css",
-  "static/js/1.ba11a4e7.chunk.js": "/opora66/static/js/1.ba11a4e7.chunk.js",
-  "static/js/1.ba11a4e7.chunk.js.map": "/opora66/static/js/1.ba11a4e7.chunk.js.map",
+  "static/js/1.5baf5287.chunk.js": "/opora66/static/js/1.5baf5287.chunk.js",
+  "static/js/1.5baf5287.chunk.js.map": "/opora66/static/js/1.5baf5287.chunk.js.map",
   "runtime~main.js": "/opora66/static/js/runtime~main.4ca25e13.js",
   "runtime~main.js.map": "/opora66/static/js/runtime~main.4ca25e13.js.map",
   "static/media/social-fb.svg": "/opora66/static/media/social-fb.1d5a3edf.svg",
@@ -25,6 +25,6 @@
   "static/css/main.de165819.chunk.css.map": "/opora66/static/css/main.de165819.chunk.css.map",
   "static/css/1.124754a1.chunk.css.map": "/opora66/static/css/1.124754a1.chunk.css.map",
   "index.html": "/opora66/index.html",
-  "precache-manifest.1e2f1347cf74bbc3e378e594419abf9d.js": "/opora66/precache-manifest.1e2f1347cf74bbc3e378e594419abf9d.js",
+  "precache-manifest.699bf5841c957f05d7ee620dd36f578f.js": "/opora66/precache-manifest.699bf5841c957f05d7ee620dd36f578f.js",
   "service-worker.js": "/opora66/service-worker.js"
 }

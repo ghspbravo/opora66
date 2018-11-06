@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f9949b90cc1e4bc00b9f",
+    "revision": "b6716af8511573673c02",
     "url": "/opora66/static/css/main.de165819.chunk.css"
   },
   {
-    "revision": "f9949b90cc1e4bc00b9f",
-    "url": "/opora66/static/js/main.f9949b90.chunk.js"
+    "revision": "b6716af8511573673c02",
+    "url": "/opora66/static/js/main.b6716af8.chunk.js"
   },
   {
-    "revision": "ba11a4e7a7d414e1f740",
+    "revision": "5baf5287e396cb0bae07",
     "url": "/opora66/static/css/1.124754a1.chunk.css"
   },
   {
-    "revision": "ba11a4e7a7d414e1f740",
-    "url": "/opora66/static/js/1.ba11a4e7.chunk.js"
+    "revision": "5baf5287e396cb0bae07",
+    "url": "/opora66/static/js/1.5baf5287.chunk.js"
   },
   {
     "revision": "4ca25e132f5fa3c953f4",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/opora66/static/media/map-icon-5.d096e7fc.svg"
   },
   {
-    "revision": "829b7b2b85349cb1007be5c06705b47c",
+    "revision": "4641f8ec7c0a4a6c5dcc8d293e9270a8",
     "url": "/opora66/index.html"
   }
 ];
