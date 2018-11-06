@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import { Link } from 'react-router-dom'
+
 import burger from '../res/burger.svg'
 import brand from '../res/brand.png'
 
@@ -7,7 +9,7 @@ export default class Header extends Component {
 	handleMobileNavOpen = (e) => {
 		let wrapper = document.querySelector('.nav-mobile-wrapper')
 		let menu = document.querySelector('.nav-mobile')
-		
+
 		wrapper.style.display = 'block';
 
 		setTimeout(() => {
@@ -28,11 +30,14 @@ export default class Header extends Component {
 	}
 
 	render() {
+
 		return (
 			<header className="container-fluid">
 				<div className="row align-items-center header">
 					<div className="header-brand">
-						<img src={brand} alt="brand name" />
+						<Link to='/'>
+							<img src={brand} alt="brand name" />
+						</Link>
 					</div>
 					<nav className="col d-lg-flex d-none row justify-content-center header-nav nav-desktop">
 						<a className="header-nav-item" href="#about">О нас</a>

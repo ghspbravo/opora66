@@ -74,10 +74,10 @@ export default class Footer extends Component {
 					</div>
 					<div className="row footer-credits" style={{ marginTop: '30px' }}>
 						<div className="col-lg-6">
-							<p className="footer-credits-text">© 2018 <span>ОПОРА</span> . ВСЕ ПРАВА ЗАЩИЩЕНЫ . Дизайн <span>Brus</span></p>
+							<p className="footer-credits-text">© 2018 <span>ОПОРА</span> . ВСЕ ПРАВА ЗАЩИЩЕНЫ . <br className="d-md-none" /> Дизайн <span>Brus</span></p>
 						</div>
 						<div className="col-lg-6">
-							<p className="footer-credits-text contact">Остались вопросы? Мы поможем. Звоните нам: <span>+7 999 999 99 99</span></p>
+							<p className="footer-credits-text contact">Остались вопросы? Мы поможем. <br className="d-md-none"/> Звоните нам: <span>+7 999 999 99 99</span></p>
 						</div>
 					</div>
 				</div>

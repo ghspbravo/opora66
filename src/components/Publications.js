@@ -1,6 +1,55 @@
 import React, { Component } from 'react'
+import publicationsDesktopGrid from './elements/publicationsDesktopGrid';
+import publicationsMobileGrid from './elements/publicationsMobileGrid';
 
 export default class Publications extends Component {
+    constructor(props) {
+        super(props)
+
+        let isMobile = window.innerWidth < 1200
+
+        this.state = {
+            isMobile: isMobile ? true : false,
+            publicationsLoading: true,
+            publications: null,
+            publicationsCategoriesId: [
+                2, 3, 4, 5, 6, 7
+            ],
+            currentCategory: 2,
+            pagesCount: null,
+            pageToLoad: 1,
+            postsPerPage: isMobile ? 5 : 10,
+            gridsCount: [],
+        }
+    }
+
+    componentDidMount() {
+        this.loadCategory(this.state.currentCategory)
+    }
+
+    loadCategory = (category) => {
+
+        fetch(`${this.props.server}/categories/${category}`)
+            .then(data => data.json())
+            .then(data => this.setState({
+                pagesCount: Math.ceil(data.count / this.state.postsPerPage),
+                currentCategory: category,
+                pageToLoad: 1,
+            }))
+            .then(this.loadPublications(category, 1))
+    }
+
+    loadPublications = (category = null, page = null) => {
+        fetch(`${this.props.server}/posts?categories=${category ? category : this.state.currentCategory}&per_page=${this.state.postsPerPage}&page=${page ? page : this.state.pageToLoad}&_embed`)
+            .then(data => data.json())
+            .then(data => this.setState({
+                publications: category ? data : [...this.state.publications, ...data],
+                publicationsLoading: false,
+                pageToLoad: this.state.pageToLoad + 1,
+                gridsCount: [...this.state.gridsCount, true]
+            }))
+    }
+
     render() {
         return (
             <section id="publications">
@@ -10,117 +59,21 @@ export default class Publications extends Component {
                         <h2 className="section-description">Новости и публикации</h2>
                     </div>
                     <div className="row filters justify-content-center">
-                        <button className="filter-item active">Все</button>
-                        <button className="filter-item">Новости</button>
-                        <button className="filter-item">Анонсы</button>
-                        <button className="filter-item">Регионы</button>
-                        <button className="filter-item">Фото и видео</button>
-                        <button className="filter-item">Особое мнение</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[0])} className="filter-item active">Все</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[1])} className="filter-item">Новости</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[2])} className="filter-item">Анонсы</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[3])} className="filter-item">Регионы</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[4])} className="filter-item">Фото и видео</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Особое мнение</button>
                     </div>
-                    <div className="row">
-                        <div className="publications-container row d-xl-flex d-none" style={{ marginTop: '60px' }}>
-                            <div className="flex-column">
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">2 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-large" style={{ backgroundImage: 'url(https://via.placeholder.com/370x670)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">3 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex-column">
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">4 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">5 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">7 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">8 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex-column">
-                                <div className="publication-item publication-large" style={{ backgroundImage: 'url(https://via.placeholder.com/370x670)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">6 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">9 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                                <div className="publication-item publication-compact" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                    <div className="publication-content">
-                                        <p className="publication-excerpt">10 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                        <a className="publication-link" href="">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="publication-mobile-container row justify-content-center d-xl-none" style={{ marginTop: '60px' }}>
-                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                            <div className="publication-item col-md-5 col-10" style={{ backgroundImage: 'url(https://via.placeholder.com/370x320)' }}>
-                                <div className="publication-content">
-                                    <p className="publication-excerpt">1 Александр Калинин: Дальний Восток должен стать регионом - центром притяжения граждан и малого бизнеса</p>
-                                    <a className="publication-link" href="">Читать</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div id='grid' className="row justify-content-center">
+                        {publicationsDesktopGrid(this.state.publications, this.state.gridsCount)}
+                        {publicationsMobileGrid(this.state.publications)}
                     </div>
                     <div className="row justify-content-center">
-                        <button style={{ marginTop: '40px' }} className="button button-light">Посмотреть все</button>
+                        {this.state.pageToLoad > this.state.pagesCount
+                            ? null
+                            : <button onClick={() => this.loadPublications()} style={{ marginTop: '40px' }} className="button button-light" disabled={this.state.publicationsLoading}>{this.state.publicationsLoading ? 'Загрузка' : 'Больше'}</button>}
                     </div>
                 </div>
             </section>

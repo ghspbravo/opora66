@@ -162,6 +162,18 @@ section p {
     border-bottom: 1px solid gray;
 }
 
+/* POSTS */
+
+.post-single p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.post-single img {
+    height: auto;
+    width: 100%;
+}
+
 /* SECTIONS */
 
 /* HEADER */
@@ -335,7 +347,7 @@ header {
 .publication-item .publication-content {
     height: 175px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px 50px;
+    padding: 10px 30px;
 }
 
 .publication-excerpt {
@@ -760,7 +772,7 @@ footer {
     }
 
     .publication-item .publication-content {
-        padding: 0 50px;
+        padding: 0 30px;
     }
 }
 

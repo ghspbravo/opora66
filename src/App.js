@@ -2,23 +2,19 @@ import React, { Component } from 'react';
 import 'normalize.css'
 import './App.css';
 
-import Banner from './components/Banner'
-import About from './components/About';
-import Progress from './components/Progress';
-import Publications from './components/Publications';
-import Map from './components/Map';
-import Management from './components/Management';
-import Reviews from './components/Reviews';
-import Steps from './components/Steps';
-import Payments from './components/Payments';
-import Partners from './components/Partners';
-import Contacts from './components/Contacts';
-import Adress from './components/Adress';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Main from './components/Main';
+import Post from './components/Post';
 
 class App extends Component {
+
+	SERVER = 'https://zotov-test.ru/wp-json/wp/v2'
+
 	componentDidMount() {
+
 		let filters = document.querySelectorAll('.filters')
 		filters.forEach(filter => filter.querySelectorAll('.filter-item').forEach(item => {
 			item.onmouseover = (e) => e.target.classList.add('hover')
@@ -32,22 +28,14 @@ class App extends Component {
 
 	render() {
 		return (
-			<main>
-				<Header />
-				<Banner />
-				<About />
-				<Progress />
-				<Publications />
-				<Map />
-				<Management />
-				<Reviews />
-				<Steps />
-				<Payments />
-				<Partners />
-				<Contacts />
-				<Adress />
-				<Footer />
-			</main>
+			<Router>
+				<main>
+					<Header />
+					<Route path="/" exact render={() => <Main server={this.SERVER} />} />
+					<Route path="/p=:id" render={({ match }) => <Post server={this.SERVER} id={match.params.id} />} />
+					<Footer />
+				</main>
+			</Router>
 		);
 	}
 }
