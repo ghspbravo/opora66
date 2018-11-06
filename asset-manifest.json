@@ -1,10 +1,10 @@
 {
-  "main.css": "/opora66/static/css/main.de165819.chunk.css",
-  "main.js": "/opora66/static/js/main.9293912f.chunk.js",
-  "main.js.map": "/opora66/static/js/main.9293912f.chunk.js.map",
+  "main.css": "/opora66/static/css/main.d227e743.chunk.css",
+  "main.js": "/opora66/static/js/main.d4123d1a.chunk.js",
+  "main.js.map": "/opora66/static/js/main.d4123d1a.chunk.js.map",
   "static/css/1.124754a1.chunk.css": "/opora66/static/css/1.124754a1.chunk.css",
-  "static/js/1.ba11a4e7.chunk.js": "/opora66/static/js/1.ba11a4e7.chunk.js",
-  "static/js/1.ba11a4e7.chunk.js.map": "/opora66/static/js/1.ba11a4e7.chunk.js.map",
+  "static/js/1.9424c94b.chunk.js": "/opora66/static/js/1.9424c94b.chunk.js",
+  "static/js/1.9424c94b.chunk.js.map": "/opora66/static/js/1.9424c94b.chunk.js.map",
   "runtime~main.js": "/opora66/static/js/runtime~main.4ca25e13.js",
   "runtime~main.js.map": "/opora66/static/js/runtime~main.4ca25e13.js.map",
   "static/media/social-fb.svg": "/opora66/static/media/social-fb.1d5a3edf.svg",
@@ -22,9 +22,9 @@
   "static/media/map-icon-3.svg": "/opora66/static/media/map-icon-3.fff5f63e.svg",
   "static/media/map-icon-4.svg": "/opora66/static/media/map-icon-4.69394f09.svg",
   "static/media/map-icon-5.svg": "/opora66/static/media/map-icon-5.d096e7fc.svg",
-  "static/css/main.de165819.chunk.css.map": "/opora66/static/css/main.de165819.chunk.css.map",
+  "static/css/main.d227e743.chunk.css.map": "/opora66/static/css/main.d227e743.chunk.css.map",
   "static/css/1.124754a1.chunk.css.map": "/opora66/static/css/1.124754a1.chunk.css.map",
   "index.html": "/opora66/index.html",
-  "precache-manifest.46dab7a471e017abb49fcd3150f566f9.js": "/opora66/precache-manifest.46dab7a471e017abb49fcd3150f566f9.js",
+  "precache-manifest.febd867a58b1d7e50e85f72f047f4b77.js": "/opora66/precache-manifest.febd867a58b1d7e50e85f72f047f4b77.js",
   "service-worker.js": "/opora66/service-worker.js"
 }
