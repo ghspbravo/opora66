@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "808475330ce9ce076330",
-    "url": "/opora66/static/css/main.246ea207.chunk.css"
+    "revision": "5464271612a1d0a233d9",
+    "url": "/opora66/static/css/main.35f9cc00.chunk.css"
   },
   {
-    "revision": "808475330ce9ce076330",
-    "url": "/opora66/static/js/main.80847533.chunk.js"
+    "revision": "5464271612a1d0a233d9",
+    "url": "/opora66/static/js/main.54642716.chunk.js"
   },
   {
-    "revision": "59ad5213268304ea3b9e",
-    "url": "/opora66/static/css/1.4685a575.chunk.css"
+    "revision": "cf33e7b5aa5880a944c5",
+    "url": "/opora66/static/css/1.01367abe.chunk.css"
   },
   {
-    "revision": "59ad5213268304ea3b9e",
-    "url": "/opora66/static/js/1.59ad5213.chunk.js"
+    "revision": "cf33e7b5aa5880a944c5",
+    "url": "/opora66/static/js/1.cf33e7b5.chunk.js"
   },
   {
     "revision": "4ca25e132f5fa3c953f4",
@@ -22,10 +22,6 @@ self.__precacheManifest = [
   {
     "revision": "1d5a3edf009cb886171e88b2a1555dc4",
     "url": "/opora66/static/media/social-fb.1d5a3edf.svg"
-  },
-  {
-    "revision": "07ee4435071a6f88773d446fe195763a",
-    "url": "/opora66/static/media/management_person.07ee4435.png"
   },
   {
     "revision": "58a844c12897d7479e3887c5810c19bd",
@@ -40,8 +36,12 @@ self.__precacheManifest = [
     "url": "/opora66/static/media/down-arrow-tablet.dbd1d60c.svg"
   },
   {
-    "revision": "cd1d777e01c3c43fd9273c9232dadee7",
-    "url": "/opora66/static/media/management_leader.cd1d777e.png"
+    "revision": "07ee4435071a6f88773d446fe195763a",
+    "url": "/opora66/static/media/management_person.07ee4435.png"
+  },
+  {
+    "revision": "8659515094d85059439811bbedcbbc39",
+    "url": "/opora66/static/media/burger.86595150.svg"
   },
   {
     "revision": "55c576b7c85476718c6ffece7f548d80",
@@ -84,11 +84,7 @@ self.__precacheManifest = [
     "url": "/opora66/static/media/map-placeholder.006540f2.png"
   },
   {
-    "revision": "8659515094d85059439811bbedcbbc39",
-    "url": "/opora66/static/media/burger.86595150.svg"
-  },
-  {
-    "revision": "ce1a169db16e8be8c504871af0e15621",
+    "revision": "ca3663ba7ebab7ead8bccb4171b1e622",
     "url": "/opora66/index.html"
   }
 ];
