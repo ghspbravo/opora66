@@ -288,7 +288,7 @@ header {
 
 .about-image {
     width: 950px;
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 .about-image img {
@@ -791,6 +791,13 @@ footer {
     .about-image {
         padding-right: 0;
     }
+    .step {
+        margin: 20px 0;
+    }
+
+    .step:after {
+        display: none;
+    }
 }
 
 /* MD */
@@ -813,13 +820,7 @@ footer {
     .map-image {
         position: relative;
     }
-    .step {
-        margin: 20px 0;
-    }
 
-    .step:after {
-        display: none;
-    }
     .footer-credits-text,
     .footer-credits-text.contact {
         text-align: center;

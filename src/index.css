@@ -30,6 +30,10 @@ img {
     user-select: none;
 }
 
+iframe {
+    user-select: none;
+}
+
 form input,
 form textarea {
     outline: none;

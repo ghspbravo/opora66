@@ -8,7 +8,7 @@ export default class About extends Component {
             <section id="about" className="section-side-left section-dark">
                 <div className="container-fluid section-content">
                     <div className="row no-gutters">
-                        <div className="col-lg-6 col-12 image-bordered about-image">
+                        <div className="col-lg-5 col-12 image-bordered about-image">
                             <img src={about} alt="about preview" />
                         </div>
                         <div className="col-lg-6 col-12">

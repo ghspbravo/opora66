@@ -14,7 +14,7 @@ export default class Partners extends Component {
                                     <div className="section-name">Мы строим доверие</div>
                                     <div className="section-description">Наши партнеры</div>
                                 </div>
-                                {window.innerwidth > 1200
+                                {window.innerWidth > 1200
                                     ? <div className="partners-wrapper">
                                         <div className="row d-flex no-gutters partners-list justify-content-center">
                                             <div className="partner-item d-flex align-content-center justify-items-center">

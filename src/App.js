@@ -31,8 +31,8 @@ class App extends Component {
 			<Router>
 				<main>
 					<Header />
-					<Route path={process.env.PUBLIC_URL + "/"} exact render={() => <Main server={this.SERVER} />} />
-					<Route path={process.env.PUBLIC_URL + "/p=:id"} render={({ match }) => <Post server={this.SERVER} id={match.params.id} />} />
+					<Route path={"/"} exact render={() => <Main server={this.SERVER} />} />
+					<Route path={"/p=:id"} render={({ match }) => <Post server={this.SERVER} id={match.params.id} />} />
 					<Footer />
 				</main>
 			</Router>
