@@ -16,7 +16,7 @@ import Adress from './Adress';
 export default class Main extends Component {
 	render() {
 		return (
-			<div>
+			<div className="tingle-content-wrapper">
 				<Banner />
 				<About />
 				<Progress />

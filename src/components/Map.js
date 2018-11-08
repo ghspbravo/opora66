@@ -21,7 +21,7 @@ export default class Map extends Component {
                             <p>
                                 Карта предпринимателя - членский билет, который позволяет члену "ОПОРЫ РОССИИ" участвовать в законотворческом процессе, быть в сообществе активных и амбициозных предпринимателей, принимать участие в деловых и обучающих мероприятия организации и пользоваться пакетом с эксклюзивными скидками и предложениями от партнеров "ОПОРЫ РОССИИ"
                             </p>
-                            <div className="row align-items-start map-privileges-wrapper">
+                            <div className="row align-items-start justify-content-center map-privileges-wrapper">
                                 <div style={{width: '68px'}} className="map-privilege">
                                     <div className="privilege-icon">
                                         <img src={map_icon_1} alt="" />
@@ -67,7 +67,9 @@ export default class Map extends Component {
                         </div>
                         <div className="col-lg-6 d-flex flex-column align-items-center" style={{marginTop: '20px'}}>
                             <img className="map-image" src={map} alt="employerMap" />
-                            <button style={{marginTop: '40px'}} className="button button-light d-lg-none">Приобрести</button>
+                            <button onClick={() => document.querySelector('#payments').scrollIntoView({
+                                behavior: 'smooth'
+                            })} style={{marginTop: '40px'}} className="button button-light d-lg-none">Приобрести</button>
                         </div>
                     </div>
                 </div>

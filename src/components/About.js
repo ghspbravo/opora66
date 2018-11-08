@@ -19,7 +19,9 @@ export default class About extends Component {
                             <p>
                                 «ОПОРА РОССИИ» является площадкой для эффективного профессионального диалога владельцев и руководителей предприятий малого и среднего бизнеса и представителей федеральных органов исполнительной власти, региональной власти и муниципалитетов, контролирующих органов, инфраструктуры поддержки малого и среднего предпринимательства, а также представителей экспертного сообщества.
                             </p>
-                            <button style={{marginTop: '40px'}} className="button button-light">Узнать больше</button>
+                            <button onClick={() => document.querySelector('#publications').scrollIntoView({
+                                behavior: 'smooth'
+                            })} style={{marginTop: '40px'}} className="button button-light">Узнать больше</button>
                         </div>
                     </div>
                 </div>

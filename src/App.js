@@ -3,11 +3,15 @@ import 'normalize.css'
 import './App.css';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import createBrowserHistory from "history/createBrowserHistory";
+
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Post from './components/Post';
+
+const customHistory = createBrowserHistory();
 
 class App extends Component {
 
@@ -32,7 +36,7 @@ class App extends Component {
 				<main>
 					<Header />
 					<Route path={"/"} exact render={() => <Main server={this.SERVER} />} />
-					<Route path={"/p=:id"} render={({ match }) => <Post server={this.SERVER} id={match.params.id} />} />
+					<Route path={"/p=:id"} render={({ history, match }) => <Post server={this.SERVER} id={match.params.id} goBack={history.goBack} />} />
 					<Footer />
 				</main>
 			</Router>

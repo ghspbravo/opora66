@@ -14,41 +14,41 @@ export default class Reviews extends Component {
                     <div className="section-acsent-light col-12 col-lg-6 col-xl-4">
                         <div className="row achievments-wrapper">
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
-                                <h4 className="achieve-number">450тыс.</h4>
-                                <p className="achieve-description">Предпринимателей со всей России</p>
+                                <h4 className="achieve-number">16 лет</h4>
+                                <p className="achieve-description">Успешной работы</p>
                                 <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
-                                <h4 className="achieve-number">450тыс.</h4>
-                                <p className="achieve-description">Предпринимателей со всей России</p>
+                                <h4 className="achieve-number">450тыс.+</h4>
+                                <p className="achieve-description">Активных предпринимателей со всей России</p>
                                 <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
-                                <h4 className="achieve-number">450тыс.</h4>
-                                <p className="achieve-description">Предпринимателей со всей России</p>
+                                <h4 className="achieve-number">100+</h4>
+                                <p className="achieve-description">Отраслевых и предпринимательских объединений</p>
                                 <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
-                                <h4 className="achieve-number">450тыс.</h4>
-                                <p className="achieve-description">Предпринимателей со всей России</p>
+                                <h4 className="achieve-number">85</h4>
+                                <p className="achieve-description">Региональных отделений</p>
                                 <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
-                                <h4 className="achieve-number">450тыс.</h4>
-                                <p className="achieve-description">Предпринимателей со всей России</p>
+                                <h4 className="achieve-number">400+</h4>
+                                <p className="achieve-description">Местных отделений</p>
                                 <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
-                                <h4 className="achieve-number">450тыс.</h4>
-                                <p className="achieve-description">Предпринимателей со всей России</p>
+                                <h4 className="achieve-number">19</h4>
+                                <p className="achieve-description">Представителей в 25 странах мира</p>
                                 <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
                             </div>
                         </div>
                     </div>
-                    <section className="flex-column section-content section-dark col-lg-6 col-xl-8" style={{ paddingBottom: '30px' }} >
+                    <section className="d-flex flex-column justify-content-center section-content section-dark col-lg-6 col-xl-8" style={{ paddingBottom: '30px' }} >
                         <div className="section-title section-title-simplified title-center">
                             <h1 className="section-name">Отзывы</h1>
-                            <h2 className="section-description">Что наши клиенты говорят</h2>
+                            <h2 className="section-description">Мнения наших коллег</h2>
                         </div>
                         <div className="review-wrapper" style={{ marginTop: '20px' }}>
                             <div className="row no-gutters justify-content-center review-item">

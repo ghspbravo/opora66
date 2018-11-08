@@ -56,7 +56,9 @@ export default class Header extends Component {
 						</div>
 					</nav>
 					<div className="col col-lg-2 header-controls d-none d-md-block">
-						<button className="button button-acsent">Вступить</button>
+						<button onClick={() => document.querySelector('#payments').scrollIntoView({
+                                behavior: 'smooth'
+                            })} className="button button-acsent">Вступить</button>
 					</div>
 					<div className="col col-md-1 d-flex justify-content-end col-md d-lg-none mobile-burger-wrapper">
 						<button onClick={this.handleMobileNavOpen} className="mobile-burger">

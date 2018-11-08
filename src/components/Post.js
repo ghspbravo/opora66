@@ -7,7 +7,8 @@ export default class Post extends Component {
 		super(props)
 
 		this.state = {
-			post: null
+			post: null,
+			isLoading: true
 		}
 	}
 
@@ -15,19 +16,32 @@ export default class Post extends Component {
 		fetch(`${this.props.server}/posts/${this.props.id}`)
 			.then(data => data.json())
 			.then(data => this.setState({
-				post: data
+				post: data,
+				isLoading: false,
+			}))
+			.catch(() => this.setState({
+				isLoading: false,
 			}))
 	}
 
 	render() {
 		return (
-			<main className='post-single' style={{ marginTop: '100px' }}>
+			<main className='post-single' style={{ marginTop: '120px' }}>
 				{this.state.post
 					? <div className="container">
-					<h1>{this.state.post.title.rendered}</h1>
+						<button className="post-single-back" onClick={() => this.props.goBack()} >← Назад</button>
+						<h1>{this.state.post.title.rendered}</h1>
 						{Parser(this.state.post.content.rendered)}
-				</div>
-					: null
+					</div>
+					: this.state.isLoading
+						? <div style={{height: '80vh'}}>
+							<p>Загрузка...</p>
+						</div>
+						: <div className="container">
+							<h1>Что-то пошло не так</h1>
+							<p>Запись не найдена..</p>
+							<button className="post-single-back" onClick={() => this.props.goBack()} >← Назад</button>
+						</div>
 				}
 			</main>
 		)
