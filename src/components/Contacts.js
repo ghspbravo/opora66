@@ -24,7 +24,6 @@ export default class Contacts extends Component {
                                         }} />
                                 </Map>
                             </YMaps>
-                                {/* <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae25c5052816f0bd3bbd1185f79a057cdac599aa88a9e05b9bc8736d86a40d408&amp;source=constructor" width="100%" height="100%" frameBorder="0"></iframe> */}
                         </div>
                             <div className="col-lg-6">
                                 <div className="section-title">

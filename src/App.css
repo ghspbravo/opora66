@@ -134,7 +134,8 @@ section p {
 }
 
 .image-bordered img,
-.image-bordered iframe {
+.image-bordered > div,
+.image-bordered > video {
     border: 10px solid white;
     box-shadow: 0px 0px 100px rgba(30, 30, 31, 0.15);
 }
@@ -282,15 +283,11 @@ header {
     text-align: center;
 }
 
-.banner-controls {
-    margin-top: 70px;
-}
-
 .banner-controls button {
     margin: 0 10px
 }
 
-/* ABOUT */
+/* PROGRESS */
 
 .about-image {
     width: 950px;
@@ -341,6 +338,31 @@ header {
 
 .progress-step:last-child::after {
     display: none;
+}
+
+/* COMITETS */
+
+.comitets-item {
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.comitets-item p {
+    text-align: center;
+}
+
+.comitets-item-thumbnail {
+    background-color: var(--main);
+    border-radius: 50%;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 8px;
+    width: 120px;
+    height: 120px;
+}
+
+.comitets-item-thumbnail img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
 }
 
 /* ABOUT */
@@ -835,13 +857,16 @@ footer {
     margin: 0 10px;
 }
 
-.footer-credits-text {
+.footer-credits-text,
+.footer-credits-text a {
     color: #75757D;
     font-size: 14px;
 }
 
-.footer-credits-text span {
+.footer-credits-text span,
+.footer-credits-text a {
     color: white;
+    text-decoration: none;
 }
 
 .footer-credits-text.contact {

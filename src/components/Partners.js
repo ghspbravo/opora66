@@ -26,7 +26,7 @@ export default class Partners extends Component {
                                     <div className="section-name">Мы строим доверие</div>
                                     <div className="section-description">Наши партнеры</div>
                                 </div>
-                                {window.innerWidth > 1200
+                                {window.innerWidth > 568
                                     ? <div className="partners-wrapper">
                                         <div className="row d-flex no-gutters partners-list justify-content-center">
                                             <div className="partner-item d-flex align-content-center justify-items-center">
@@ -102,8 +102,8 @@ export default class Partners extends Component {
                                 }
                             </div>
                         </section>
-                        <div className="col-lg-5 d-flex flex-column align-items-center justify-content-center partners-video">
-                            <video width="100%" controls muted poster={videoThumbnail}>
+                        <div className="col-lg-5 d-flex image-bordered flex-column align-items-center justify-content-center partners-video">
+                            <video width="90%" controls muted poster={videoThumbnail}>
                                 <source src={video} type="video/mp4" />
                                 Your browser does not support html5 video.
                                 </video>

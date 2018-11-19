@@ -12,6 +12,7 @@ import Payments from './Payments';
 import Partners from './Partners';
 import Contacts from './Contacts';
 import Adress from './Adress';
+import Comitets from './Comitets';
 
 export default class Main extends Component {
 	render() {
@@ -20,6 +21,7 @@ export default class Main extends Component {
 				<Banner />
 				<About />
 				<Progress />
+				<Comitets />
 				<Publications server={this.props.server} />
 				<Map />
 				<Management server={this.props.server} />

@@ -80,6 +80,12 @@ export default class Management extends Component {
                 </ul>
             </div>
             <div class="management-section">
+                <h2>Председатель Опоры</h2>
+                <ul>
+                    <li>Тыщенко Илья Владимирович</li>
+                </ul>
+            </div>
+            <div class="management-section">
                 <h2>Вице-председатели</h2>
                 <ul>
                     <li>Аптер Григорий Борисович</li>
@@ -182,7 +188,7 @@ export default class Management extends Component {
                 </ul>
             </div>
             <div style="margin-top: 35px" class="row justify-content-center">
-                <a class="management-file-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Никите.xlsx">Скачать полный список членов орагнизации</a>
+                <a class="management-file-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Полный-список-членов-Организации.xlsx">Скачать полный список членов орагнизации</a>
             </div>
         </div>`
         )

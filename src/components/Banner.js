@@ -11,7 +11,7 @@ export default class Banner extends Component {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
             }}>
-                <div className="d-flex align-items-center justify-content-center" style={{ height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.33)', }}>
+                <div className="d-flex align-items-center justify-content-center" style={{ height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.44)', }}>
                     <div className="section-content d-flex flex-column align-items-center">
                         <img className="banner-logo col-12" src={oporaBrand} alt="logo" />
                         <div className="row justify-content-center banner-controls">
