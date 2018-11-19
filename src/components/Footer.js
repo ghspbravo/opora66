@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 
 import letter from '../res/letter-icon.png'
-import social from '../res/social-fb.svg'
+import socialFB from '../res/social-fb.svg'
+import socialVK from '../res/social-vk.svg'
+import socialIM from '../res/social-im.svg'
 
 export default class Footer extends Component {
 	render() {
@@ -57,14 +59,14 @@ export default class Footer extends Component {
 									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
 								</div>
 							</div>
-							<div className="footer-links d-flex d-md-none">
-							<div className="footer-links-item">
+							<div className="footer-links d-flex row d-md-none">
+								<div className="footer-links-item col-12">
 									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
 								</div>
-								<div className="footer-links-item">
+								<div className="footer-links-item col-12">
 									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
 								</div>
-								<div className="footer-links-item">
+								<div className="footer-links-item col-12">
 									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
 								</div>
 							</div>
@@ -84,17 +86,14 @@ export default class Footer extends Component {
 								</div>
 							</form>
 							<div className="row footer-social" style={{ marginTop: '25px' }}>
-								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
-									<img src={social} alt="facebook" className="footer-social-item-icon" />
+								<a className="footer-social-item" href="https://www.instagram.com/opora_66/" target='blank'>
+									<img src={socialIM} alt="facebook" className="footer-social-item-icon" />
 								</a>
-								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
-									<img src={social} alt="facebook" className="footer-social-item-icon" />
+								<a className="footer-social-item" href="https://vk.com/oporaekb " target='blank'>
+									<img src={socialVK} alt="facebook" className="footer-social-item-icon" />
 								</a>
-								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
-									<img src={social} alt="facebook" className="footer-social-item-icon" />
-								</a>
-								<a className="footer-social-item" href="http://opora66.ru" target='blank'>
-									<img src={social} alt="facebook" className="footer-social-item-icon" />
+								<a className="footer-social-item" href="https://www.facebook.com/groups/oporaural/?ref=bookmarks " target='blank'>
+									<img src={socialFB} alt="facebook" className="footer-social-item-icon" />
 								</a>
 							</div>
 						</div>
@@ -104,7 +103,7 @@ export default class Footer extends Component {
 							<p className="footer-credits-text">© 2018 <span>ОПОРА</span> . ВСЕ ПРАВА ЗАЩИЩЕНЫ . <br className="d-md-none" /> Дизайн <span>Brus</span></p>
 						</div>
 						<div className="col-lg-6">
-							<p className="footer-credits-text contact">Остались вопросы? Мы поможем. <br className="d-md-none" /> Звоните нам: <span>+7 999 999 99 99</span></p>
+							<p className="footer-credits-text contact">Остались вопросы? Мы поможем. <br className="d-md-none" /> Звоните нам: <span>+7 (343) 382-23-48</span></p>
 						</div>
 					</div>
 				</div>

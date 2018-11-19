@@ -1,7 +1,7 @@
 {
   "name": "opora66",
   "version": "0.1.0",
-  "homepage": "http://ghspbravo.github.io/opora66",
+  "homepage": "http://ghspbravo.github.io/frontend",
   "private": true,
   "dependencies": {
     "html-react-parser": "^0.4.7",
@@ -10,7 +10,8 @@
     "react-dom": "^16.6.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "react-yandex-maps": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

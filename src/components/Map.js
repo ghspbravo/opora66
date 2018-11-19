@@ -22,7 +22,7 @@ export default class Map extends Component {
                                 Карта предпринимателя - членский билет, который позволяет члену "ОПОРЫ РОССИИ" участвовать в законотворческом процессе, быть в сообществе активных и амбициозных предпринимателей, принимать участие в деловых и обучающих мероприятия организации и пользоваться пакетом с эксклюзивными скидками и предложениями от партнеров "ОПОРЫ РОССИИ"
                             </p>
                             <div className="row align-items-start justify-content-center map-privileges-wrapper">
-                                <div style={{width: '68px'}} className="map-privilege">
+                                <div style={{ width: '68px' }} className="map-privilege">
                                     <div className="privilege-icon">
                                         <img src={map_icon_1} alt="" />
                                     </div>
@@ -30,7 +30,7 @@ export default class Map extends Component {
                                         Получение Карточки АРЕС
                                     </p>
                                 </div>
-                                <div style={{width: '97px'}} className="map-privilege">
+                                <div style={{ width: '97px' }} className="map-privilege">
                                     <div className="privilege-icon">
                                         <img src={map_icon_2} alt="" />
                                     </div>
@@ -38,7 +38,7 @@ export default class Map extends Component {
                                         Участие В Вебинарах И Деловых Мероприятиях
                                     </p>
                                 </div>
-                                <div style={{width: '97px'}} className="map-privilege">
+                                <div style={{ width: '97px' }} className="map-privilege">
                                     <div className="privilege-icon">
                                         <img src={map_icon_3} alt="" />
                                     </div>
@@ -46,7 +46,7 @@ export default class Map extends Component {
                                         Уставные Права Члена Опоры России
                                     </p>
                                 </div>
-                                <div style={{width: '74px'}} className="map-privilege">
+                                <div style={{ width: '74px' }} className="map-privilege">
                                     <div className="privilege-icon">
                                         <img src={map_icon_4} alt="" />
                                     </div>
@@ -54,7 +54,7 @@ export default class Map extends Component {
                                         20% На Услугу “Быстрая Проверка Контрагентов”
                                     </p>
                                 </div>
-                                <div style={{width: '104px'}} className="map-privilege">
+                                <div style={{ width: '104px' }} className="map-privilege">
                                     <div className="privilege-icon">
                                         <img src={map_icon_5} alt="" />
                                     </div>
@@ -63,13 +63,17 @@ export default class Map extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <button style={{marginTop: '40px'}} className="button button-light d-lg-block d-none">Приобрести</button>
+                            <button
+                                onClick={() => document.querySelector('#payments').scrollIntoView({
+                                    behavior: 'smooth'
+                                })}
+                                style={{ marginTop: '40px' }} className="button button-light d-lg-block d-none">Приобрести</button>
                         </div>
-                        <div className="col-lg-6 d-flex flex-column align-items-center" style={{marginTop: '20px'}}>
+                        <div className="col-lg-6 d-flex flex-column align-items-center" style={{ marginTop: '20px' }}>
                             <img className="map-image" src={map} alt="employerMap" />
                             <button onClick={() => document.querySelector('#payments').scrollIntoView({
                                 behavior: 'smooth'
-                            })} style={{marginTop: '40px'}} className="button button-light d-lg-none">Приобрести</button>
+                            })} style={{ marginTop: '40px' }} className="button button-light d-lg-none">Приобрести</button>
                         </div>
                     </div>
                 </div>

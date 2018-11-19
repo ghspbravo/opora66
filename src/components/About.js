@@ -1,8 +1,36 @@
 import React, { Component } from 'react'
 
 import about from '../res/about.jpg'
+import tingle from '../tingle'
 
 export default class About extends Component {
+
+
+    docs = new tingle.modal({
+        closeMethods: ['overlay', 'button', 'escape'],
+        closeLabel: "Закрыть",
+    });
+
+    componentDidMount() {
+        this.docs.setContent(
+            `<div class="management-all-wrapper">
+            <h1 class="management-all-title">Уставные документы</h1>
+            <div class="documents-popup-item">
+                <a class="documents-popup-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
+            </div>
+            <div class="documents-popup-item">
+                <a class="documents-popup-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
+            </div>
+            <div class="documents-popup-item">
+                <a class="documents-popup-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
+            </div>
+        </div>`
+        )
+    }
+
+    componentWillUnmount() {
+        this.docs.destroy()
+    }
     render() {
         return (
             <section id="about" className="section-side-left section-dark">
@@ -19,9 +47,15 @@ export default class About extends Component {
                             <p>
                                 «ОПОРА РОССИИ» является площадкой для эффективного профессионального диалога владельцев и руководителей предприятий малого и среднего бизнеса и представителей федеральных органов исполнительной власти, региональной власти и муниципалитетов, контролирующих органов, инфраструктуры поддержки малого и среднего предпринимательства, а также представителей экспертного сообщества.
                             </p>
-                            <button onClick={() => document.querySelector('#publications').scrollIntoView({
-                                behavior: 'smooth'
-                            })} style={{marginTop: '40px'}} className="button button-light">Узнать больше</button>
+                            <div className="row" style={{ marginTop: '40px' }}>
+                                <button onClick={() => document.querySelector('#publications').scrollIntoView({
+                                    behavior: 'smooth'
+                                })} className="button button-light">Узнать больше</button>
+                                <button
+                                    onClick={() => this.docs.open()}
+                                    style={{ marginLeft: 'auto' }}
+                                    className="button button-light">Документы</button>
+                            </div>
                         </div>
                     </div>
                 </div>

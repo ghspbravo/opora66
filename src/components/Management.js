@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import tingle from '../tingle'
 import '../tingle.css'
 
+import Parser from 'html-react-parser';
+
 export default class Management extends Component {
     constructor(props) {
         super(props)
@@ -27,7 +29,7 @@ export default class Management extends Component {
 
     team = new tingle.modal({
         closeMethods: ['overlay', 'button', 'escape'],
-        closeLabel: "Close",
+        closeLabel: "Закрыть",
     });
 
     componentWillUnmount() {
@@ -47,7 +49,7 @@ export default class Management extends Component {
     }
 
     loadPublications = (category = null, page = null) => {
-        fetch(`${this.props.server}/posts?categories=${category ? category : this.state.currentCategory}&per_page=${this.state.postsPerPage}&page=${page ? page : this.state.pageToLoad}&_embed`)
+        fetch(`${this.props.server}/posts?categories=${category ? category : this.state.currentCategory}&per_page=${this.state.postsPerPage}&page=${page ? page : this.state.pageToLoad}&orderby=title&order=asc&_embed`)
             .then(data => data.json())
             .then(data => this.setState({
                 managements: category ? data : [...this.state.managements, ...data],
@@ -149,6 +151,39 @@ export default class Management extends Component {
                     <li>Горноуральский городской округ – Васильева Юлия Сергеевна, <a href="mailto:parvo.miks@yandex.ru">parvo.miks@yandex.ru</a> </li>
                 </ul>
             </div>
+            <div class="management-section">
+                <h2>Общественные (Координационные) советы, комитеты, комиссии в состав которых включены члены Свердловского отделения «ОПОРЫ РОССИИ»</h2>
+                <ul>
+                    <li>Совет по содействию развитию малого и среднего предпринимательства при Полномочном представителе Президента РФ в УрФО - Тыщенко И.В.</li>
+                    <li>Совет по развитию малого и среднего предпринимательства в Свердловской области при Правительстве СО - Тыщенко И.В., Щелоков А. Н.</li>
+                    <li>Общественный Совет по защите малого и среднего бизнеса при Прокуратуре Свердловской области  - Тыщенко И.В., Дубровина А.Н.</li>
+                    <li>Инвестиционный Совет при Губернаторе СО  - Тыщенко И.В.</li>
+                    <li>Общественный совет при Управлении делами Губернатора Свердловской области и Правительства СО  - Тыщенко И.В.</li>
+                    <li>Архитектурно-градостроительный совет при Губернаторе СО  - Ивачев З.П.</li>
+                    <li>Общественный совет при ГУ МЧС России по СО  -  Леталов П.Ф.</li>
+                    <li>Общественный экспертный совет при Уполномоченном по защите прав предпринимателей в СО  - Дубровина А.Н., Горбунов А.В., Тыщенко И.В., Ханин Д.Н.</li>
+                    <li>Общественный совет при Департаменте молодежной политики Свердловской области - Войтенко М.А.</li>
+                    <li>Общественный совет при Министерстве социальной политики СО - Савин В.А.</li>
+                    <li>Координационный Совет при ГУ МВД  РФ по Свердловской области по взаимодействию с объединениями предпринимателей  - Тыщенко И.В., Щёлоков А.Н.</li>
+                    <li>Общественно-консультативный совет при Управлении Федеральной антимонопольной службы по Свердловской области - Киреев А.С., Сидоров А.Ф., Ханин Д.Н.</li>
+                    <li>Уральское межрегиональное территориальное управление Федерального агентства по техническому регулированию и метрологии (<b>Ростехнадзор</b>) - Аптер Г.Б.</li>
+                    <li>Координационный совет по вопросам взаимодействия с представителями малого и среднего предпринимательства при Общественной приемной Управления Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по Свердловской области (<b>Роспотребнадзор</b>) - Дубровина А.Н. </li>
+                    <li>Общественный совет при Министерстве инвестиций и развития СО - Фатеев О.Н. </li>
+                    <li>Общественный совет при Министерстве по управлению государственным имуществом СО - Бардашкина Е.В., Климина А.В.</li>
+                    <li>Общественный совет при Управлении государственной охраны объектов культурного наследия Свердловской области - Хабаров М.Ю.</li>
+                    <li>Общественный совет при Министерстве международных и внешнеэкономических связей Свердловской области - Чудинов А.М.</li>
+                    <li>Общественный совет при Министерстве экономики СО - Ханин Д.Н.</li>
+                    <li>Общественный совет при  Департаменте по обеспечению деятельности мировых судей  СО  - Щелоков А.Н.</li>
+                    <li>Общественный совет при  Министерстве строительства и развития инфраструктуры СО - Савин Н.Г., Золотов Е.М.</li>
+                    <li>Общественный совет Управления ЗАГС  по СО - Золотова В.В., Бардашкина Е.В.</li>
+                    <li>Общественный совет при Министерстве инвестиций и развития Свердловской области - Фатеев О.Н.</li>
+                    <li>Постоянно действующая рабочая группа по обеспечению перехода на новый порядок применения контрольно-кассовой техники - Дубровина А.Н.</li>
+                    <li>Рабочая группа по координации реформы контрольной и надзорной деятельности в Свердловской области. - Ханин Д.Н.</li>
+                </ul>
+            </div>
+            <div style="margin-top: 35px" class="row justify-content-center">
+                <a class="management-file-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Никите.xlsx">Скачать полный список членов орагнизации</a>
+            </div>
         </div>`
         )
     }
@@ -158,7 +193,7 @@ export default class Management extends Component {
                 <div className="container section-content">
                     <div className="section-title title-center">
                         <h1 className="section-name">Мы лучшая команда</h1>
-                        <h2 className="section-description">Члены организации</h2>
+                        <h2 className="section-description">Члены Организации</h2>
                     </div>
                     <div style={{ marginTop: '50px' }} className="managements-wrapper">
                         {this.state.president
@@ -171,8 +206,8 @@ export default class Management extends Component {
                                 </div>
                                 <div className="col col-lg-8 management-leader-info">
                                     <h3 className="management-leader-name">{leader.title.rendered}</h3>
-                                    <p className="management-leader-description">{leader.content.rendered.replace(/<p>/, '').replace(/<\/p>/, '')}
-                                    </p>
+                                    <div className="management-leader-description">{Parser(leader.content.rendered)}
+                                    </div>
                                 </div>
                             </div>)
                             : <p>Загрузка...</p>}
@@ -193,11 +228,11 @@ export default class Management extends Component {
                                 </div>
                             }
                         </div>
-                        <div className="row justify-content-center">
+                        {/* <div className="row justify-content-center">
                             {this.state.pageToLoad > this.state.pagesCount
                                 ? null
                                 : <button onClick={() => this.loadPublications()} style={{ marginTop: '40px' }} className="button button-light" disabled={this.state.publicationsLoading}>{this.state.publicationsLoading ? 'Загрузка' : 'Больше'}</button>}
-                        </div>
+                        </div> */}
                     </div>
                     <div className="row justify-content-center" style={{ marginTop: '30px' }}>
                         <button onClick={() => this.team.open()} className="button button-light">Полный список членов организации</button>

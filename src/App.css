@@ -194,7 +194,7 @@ header {
 }
 
 .header-brand {
-    width: 255px;
+    width: 300px;
     height: 100px;
 }
 
@@ -343,6 +343,17 @@ header {
     display: none;
 }
 
+/* ABOUT */
+
+
+.documents-popup-item {
+    margin: 20px 0;
+}
+
+.documents-popup-item-link {
+    color: black;
+}
+
 /* PUBLICATIONS */
 
 .publication-item {
@@ -444,10 +455,13 @@ header {
     margin: 0;
 }
 
-.management-leader-description {
+.management-leader-description p {
     margin-top: 7vh;
     font-size: 18px;
     font-weight: 400;
+    white-space: pre-line;
+    max-height: 200px;
+    overflow: auto;
 }
 
 .management-info {
@@ -510,6 +524,13 @@ header {
 
 .management-section li {
     padding: 10px 0;
+}
+
+.management-file-link {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
 }
 
 /* ACHIEVES | REVIEWS */
@@ -864,6 +885,7 @@ footer {
     .step:after {
         display: none;
     }
+
 }
 
 /* MD */
@@ -948,5 +970,9 @@ footer {
 
     .payment-item {
         width: 280px;
+    }
+    .payments-documents ul,
+    .management-section ul {
+        padding-left: 0;
     }
 }

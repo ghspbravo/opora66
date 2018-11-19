@@ -3,15 +3,11 @@ import 'normalize.css'
 import './App.css';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import createBrowserHistory from "history/createBrowserHistory";
-
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Post from './components/Post';
-
-const customHistory = createBrowserHistory();
 
 class App extends Component {
 

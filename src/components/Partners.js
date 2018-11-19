@@ -103,7 +103,7 @@ export default class Partners extends Component {
                             </div>
                         </section>
                         <div className="col-lg-5 d-flex flex-column align-items-center justify-content-center partners-video">
-                            <video width="100%" height="100%" controls muted poster={videoThumbnail}>
+                            <video width="100%" controls muted poster={videoThumbnail}>
                                 <source src={video} type="video/mp4" />
                                 Your browser does not support html5 video.
                                 </video>

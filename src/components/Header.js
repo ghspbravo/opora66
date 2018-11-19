@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import burger from '../res/burger.svg'
-import brand from '../res/brand.jpg'
+import brand from '../res/OporaBrandBlue.png'
 
 export default class Header extends Component {
 	handleMobileNavOpen = (e) => {
@@ -34,9 +34,13 @@ export default class Header extends Component {
 		return (
 			<header className="container-fluid">
 				<div className="row align-items-center header">
-					<div className="header-brand">
+					<div className="header-brand d-flex align-items-center">
 						<Link to='/'>
-							<img src={brand} alt="brand name" />
+							<img onClick={() => window.scrollTo({
+								left: 0,
+								top: 0,
+								behavior: 'smooth'
+							})} src={brand} alt="brand name" />
 						</Link>
 					</div>
 					<nav className="col d-lg-flex d-none row justify-content-center header-nav nav-desktop">
@@ -44,7 +48,7 @@ export default class Header extends Component {
 						<a className="header-nav-item" href="#publications">Новости</a>
 						<a className="header-nav-item" href="#map">Проекты</a>
 						<a className="header-nav-item" href="#contacts">Контакты</a>
-						<a className="header-nav-item" href="#management">Члены правления</a>
+						<a className="header-nav-item" href="#management">Члены Организации</a>
 					</nav>
 					<nav className="d-lg-none nav-mobile-wrapper" onClick={this.handleMobileNavClose}>
 						<div className="nav-mobile">
@@ -52,13 +56,13 @@ export default class Header extends Component {
 							<a className="header-nav-mobile-item" href="#publications">Новости</a>
 							<a className="header-nav-mobile-item" href="#map">Проекты</a>
 							<a className="header-nav-mobile-item" href="#contacts">Контакты</a>
-							<a className="header-nav-mobile-item" href="#management">Члены правления</a>
+							<a className="header-nav-mobile-item" href="#management">Члены Организации</a>
 						</div>
 					</nav>
 					<div className="col col-lg-2 header-controls d-none d-md-block">
 						<button onClick={() => document.querySelector('#payments').scrollIntoView({
-                                behavior: 'smooth'
-                            })} className="button button-acsent">Вступить</button>
+							behavior: 'smooth'
+						})} className="button button-acsent">Вступить</button>
 					</div>
 					<div className="col col-md-1 d-flex justify-content-end col-md d-lg-none mobile-burger-wrapper">
 						<button onClick={this.handleMobileNavOpen} className="mobile-burger">
