@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import {Link} from 'react-router-dom'
+
 import letter from '../res/letter-icon.png'
 import socialFB from '../res/social-fb.svg'
 import socialVK from '../res/social-vk.svg'
@@ -17,7 +19,7 @@ export default class Footer extends Component {
 							</div>
 							<div className="footer-links d-none d-md-flex flex-column">
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
+									<Link className="footer-links-item-link" to="/bureau">Бюро</Link>
 								</div>
 								<div className="footer-links-item">
 									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
@@ -31,7 +33,7 @@ export default class Footer extends Component {
 							</div>
 							<div className="footer-links d-flex d-md-none">
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
+									<Link className="footer-links-item-link" to="/bureau">Бюро</Link>
 								</div>
 								<div className="footer-links-item">
 									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>

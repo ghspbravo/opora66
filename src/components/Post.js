@@ -26,7 +26,7 @@ export default class Post extends Component {
 
 	render() {
 		return (
-			<main className='post-single' style={{ marginTop: '120px' }}>
+			<div className='post-single'>
 				{this.state.post
 					? <div className="container">
 						<button className="post-single-back" onClick={() => this.props.goBack()} >← Назад</button>
@@ -43,7 +43,7 @@ export default class Post extends Component {
 							<button className="post-single-back" onClick={() => this.props.goBack()} >← Назад</button>
 						</div>
 				}
-			</main>
+			</div>
 		)
 	}
 }

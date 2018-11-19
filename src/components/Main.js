@@ -17,7 +17,7 @@ import Comitets from './Comitets';
 export default class Main extends Component {
 	render() {
 		return (
-			<div className="tingle-content-wrapper">
+			<div id="main" className="tingle-content-wrapper">
 				<Banner />
 				<About />
 				<Progress />

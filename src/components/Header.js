@@ -46,7 +46,8 @@ export default class Header extends Component {
 					<nav className="col d-lg-flex d-none row justify-content-center header-nav nav-desktop">
 						<a className="header-nav-item" href="#about">О нас</a>
 						<a className="header-nav-item" href="#publications">Новости</a>
-						<a className="header-nav-item" href="#map">Проекты</a>
+						<Link className="header-nav-item" to="/bureau">Бюро</Link>
+						{/* <a className="header-nav-item" href="#map">Проекты</a> */}
 						<a className="header-nav-item" href="#contacts">Контакты</a>
 						<a className="header-nav-item" href="#management">Члены Организации</a>
 					</nav>
@@ -54,7 +55,8 @@ export default class Header extends Component {
 						<div className="nav-mobile">
 							<a className="header-nav-mobile-item" href="#about">О нас</a>
 							<a className="header-nav-mobile-item" href="#publications">Новости</a>
-							<a className="header-nav-mobile-item" href="#map">Проекты</a>
+							<Link className="header-nav-item" to="/bureau">Бюро</Link>
+							{/* <a className="header-nav-mobile-item" href="#map">Проекты</a> */}
 							<a className="header-nav-mobile-item" href="#contacts">Контакты</a>
 							<a className="header-nav-mobile-item" href="#management">Члены Организации</a>
 						</div>

@@ -15,6 +15,12 @@ import videoThumbnail from '../res/OporaBrand.png'
 
 
 export default class Partners extends Component {
+    componentDidMount() {
+        window.$('.partners-wrapper').slick({
+            dots: true,
+            arrows: false,
+        })
+    }
     render() {
         return (
             <section id="partners" className="section-dark" style={{ padding: 0 }}>

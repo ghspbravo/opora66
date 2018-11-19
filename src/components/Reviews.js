@@ -7,6 +7,12 @@ import person from '../res/management_person.png'
 import facebook from '../res/social-fb.svg'
 
 export default class Reviews extends Component {
+    componentDidMount() {
+        window.$('.review-wrapper').slick({
+            dots: true,
+            arrows: false,
+        });
+    }
     render() {
         return (
             <div id="#reviews">

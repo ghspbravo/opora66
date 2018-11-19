@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Post from './components/Post';
+import Bureau from './components/Bureau';
 
 class App extends Component {
 
@@ -31,8 +32,11 @@ class App extends Component {
 			<Router>
 				<main>
 					<Header />
-					<Route path={"/"} exact render={() => <Main server={this.SERVER} />} />
-					<Route path={"/p=:id"} render={({ history, match }) => <Post server={this.SERVER} id={match.params.id} goBack={history.goBack} />} />
+					<Route path="/" exact render={() =>
+						<Main server={this.SERVER} />} />
+					<Route path="/p=:id" render={({ history, match }) =>
+						<Post server={this.SERVER} id={match.params.id} goBack={history.goBack} />} />
+					<Route path="/bureau" component={Bureau} />
 					<Footer />
 				</main>
 			</Router>
