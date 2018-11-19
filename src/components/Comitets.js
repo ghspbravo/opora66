@@ -34,6 +34,18 @@ export default class Comitets extends Component {
 							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={woman} alt="" />
+									</div>
+									<p>Комитет по развитию женского предпринимательства</p>
+								</div>
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={molod} alt="" />
+									</div>
+									<p>Комитет по молодежному предпринимательству</p>
+								</div>
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={stroitelstvo} alt="" />
 									</div>
 									<p>Комитет по строительству</p>
@@ -56,20 +68,14 @@ export default class Comitets extends Component {
 									</div>
 									<p>Комитет по оценке регулирующего воздействия</p>
 								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
-									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
-										<img src={woman} alt="" />
-									</div>
-									<p>Комитет по развитию женского предпринимательства</p>
-								</div>
+							</div>
+							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={bozopasnost} alt="" />
 									</div>
 									<p>Комитет по средствам технической безопасности</p>
 								</div>
-							</div>
-							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={priroda} alt="" />
@@ -81,12 +87,6 @@ export default class Comitets extends Component {
 										<img src={svyaz} alt="" />
 									</div>
 									<p>Комитет по международным связям</p>
-								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
-									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
-										<img src={molod} alt="" />
-									</div>
-									<p>Комитет по молодежному предпринимательству</p>
 								</div>
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
@@ -112,6 +112,20 @@ export default class Comitets extends Component {
 							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={woman} alt="" />
+									</div>
+									<p>Комитет по развитию женского предпринимательства</p>
+								</div>
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={molod} alt="" />
+									</div>
+									<p>Комитет по молодежному предпринимательству</p>
+								</div>
+							</div>
+							<div className="row d-flex no-gutters comitets-list">
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={stroitelstvo} alt="" />
 									</div>
 									<p>Комитет по строительству</p>
@@ -140,37 +154,23 @@ export default class Comitets extends Component {
 							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
-										<img src={woman} alt="" />
-									</div>
-									<p>Комитет по развитию женского предпринимательства</p>
-								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
-									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={bozopasnost} alt="" />
 									</div>
 									<p>Комитет по средствам технической безопасности</p>
 								</div>
-							</div>
-							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={priroda} alt="" />
 									</div>
 									<p>Комитет по природопользованию и экологии</p>
 								</div>
+							</div>
+							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={svyaz} alt="" />
 									</div>
 									<p>Комитет по международным связям</p>
-								</div>
-							</div>
-							<div className="row d-flex no-gutters comitets-list">
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
-									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
-										<img src={molod} alt="" />
-									</div>
-									<p>Комитет по молодежному предпринимательству</p>
 								</div>
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
