@@ -12,7 +12,7 @@ import Bureau from './components/Bureau';
 
 class App extends Component {
 
-	SERVER = 'https://zotov-test.ru/wp-json/wp/v2'
+	SERVER = 'http://opora66.ru/wp-json/wp/v2'
 
 	componentDidMount() {
 

@@ -13,9 +13,9 @@ export default class Publications extends Component {
             publicationsLoading: true,
             publications: null,
             publicationsCategoriesId: [
-                2, 3, 4, 5, 6, 7
+                14, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
             ],
-            currentCategory: 2,
+            currentCategory: 14,
             pagesCount: null,
             pageToLoad: 1,
             postsPerPage: isMobile ? 5 : 10,
@@ -65,11 +65,11 @@ export default class Publications extends Component {
                         <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[3])} className="filter-item">Работа местных отделений</button>
                         <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[4])} className="filter-item">Комитет по развитию женского предпринимательства</button>
                         <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Комитет по молодежному предпринимательству </button>
-                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Семинары/мастер-классы </button>
-                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Бюро Совета</button>
-                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Совет Свердловского отделения «ОПОРА РОССИИ»</button>
-                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Мероприятия партнеров </button>
-                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[5])} className="filter-item">Объявления </button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[6])} className="filter-item">Семинары/мастер-классы </button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[7])} className="filter-item">Бюро Совета</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[8])} className="filter-item">Совет Свердловского отделения «ОПОРА РОССИИ»</button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[9])} className="filter-item">Мероприятия партнеров </button>
+                        <button disabled={this.state.publicationsLoading} onClick={() => this.loadCategory(this.state.publicationsCategoriesId[10])} className="filter-item">Объявления </button>
                     </div>
                     <div id='grid' className="row justify-content-center">
                         {publicationsDesktopGrid(this.state.publications, this.state.gridsCount)}

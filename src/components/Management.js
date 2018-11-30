@@ -19,8 +19,8 @@ export default class Management extends Component {
             presidentLoading: true,
             president: null,
             presidentError: null,
-            presidentCategoryId: 13,
-            currentCategory: 8,
+            presidentCategoryId: 12,
+            currentCategory: 13,
             pagesCount: null,
             pageToLoad: 1,
             postsPerPage: isMobile ? 5 : 10,
@@ -103,7 +103,6 @@ export default class Management extends Component {
                     <li>Горбунов Алексей Вячеславович</li>
                     <li>Дубровина Анна Николаевна</li>
                     <li>Жукова Нина Сергеевна</li>
-                    <li>Ивачев Захар Петрович</li>
                     <li>Колосов Андрей Владиславович</li>
                     <li>Комар Анатолий Васильевич</li>
                     <li>Климина Анастасия Васильевна</li>
@@ -136,6 +135,8 @@ export default class Management extends Component {
                     <li>Комиссия по art, медиа и киноиндустрии – Терентьев Артем Валерьевич, <a href="mailto:artt82@yandex.ru">artt82@yandex.ru</a> </li>
                     <li>Комитет по инвестициям - Васильева Юлия Сергеевна, <a href="mailto:parvo.miks@yandex.ru">parvo.miks@yandex.ru</a></li>
                     <li>Комитет по транспорту – Вотинцев Сергей Васильевич <a href="mailto:asma-votinceva@yandex.ru">asma-votinceva@yandex.ru</a></li>
+                    <li>Комитет по модернизации инфраструктуры жилищно-коммунального хозяйства – Рыцева Юлия Валерьевна</li>
+                    <li>Комиссия по клининговой деятельности и обращению с отходами производства и потребления - Локшина Алиса Борисовна</li>
                 </ul>
             </div>
             <div class="management-section">
@@ -152,8 +153,6 @@ export default class Management extends Component {
                     <li>Нижний Тагил - Лазарева Инна Павловна, <a href="mailto:Lazareva-ip@mail.ru">Lazareva-ip@mail.ru</a></li>
                     <li>Полевской - Бориско Илья Николаевич, <a href="mailto:boriskoilya@mail.ru">boriskoilya@mail.ru</a></li>
                     <li>Сысерть - Климина Анастасия Васильевна , <a href="mailto:kliminamarketing@mail.ru">kliminamarketing@mail.ru</a></li>
-                    <li>Тавда - Новоселов Александр Александрович, <a href="mailto:Opora-tavda@yandex.ru">Opora-tavda@yandex.ru</a> <a href="mailto:ooomaiv@yandex.ru">ooomaiv@yandex.ru</a></li>
-                    <li>Туринск -  Бусыгин Александр Анатольевич, <a href="mailto:Bus_1962@mail.ru">Bus_1962@mail.ru</a></li>
                     <li>Горноуральский городской округ – Васильева Юлия Сергеевна, <a href="mailto:parvo.miks@yandex.ru">parvo.miks@yandex.ru</a> </li>
                 </ul>
             </div>
@@ -188,7 +187,7 @@ export default class Management extends Component {
                 </ul>
             </div>
             <div style="margin-top: 35px" class="row justify-content-center">
-                <a class="management-file-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Полный-список-членов-Организации.xlsx">Скачать полный список членов орагнизации</a>
+                <a class="management-file-link" href="http://opora66.ru/wp-content/uploads/2018/11/Полный-список-членов-Организации.xlsx">Скачать полный список членов орагнизации</a>
             </div>
         </div>`
         )

@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
-import achieve_icon from '../res/achieve-icon-1.svg'
+import achieve_icon_1 from '../res/achieve-icon-1.png'
+import achieve_icon_2 from '../res/achieve-icon-2.png'
+import achieve_icon_3 from '../res/achieve-icon-3.png'
+import achieve_icon_4 from '../res/achieve-icon-4.png'
+import achieve_icon_5 from '../res/achieve-icon-5.png'
+import achieve_icon_6 from '../res/achieve-icon-6.png'
 
 import person from '../res/management_person.png'
 
@@ -22,32 +27,32 @@ export default class Reviews extends Component {
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
                                 <h4 className="achieve-number">16 лет</h4>
                                 <p className="achieve-description">Успешной работы</p>
-                                <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
+                                <img className="achieve-icon" src={achieve_icon_1} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
                                 <h4 className="achieve-number">450тыс.+</h4>
                                 <p className="achieve-description">Активных предпринимателей со всей России</p>
-                                <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
+                                <img className="achieve-icon" src={achieve_icon_2} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
                                 <h4 className="achieve-number">100+</h4>
                                 <p className="achieve-description">Отраслевых и предпринимательских объединений</p>
-                                <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
+                                <img className="achieve-icon" src={achieve_icon_3} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
                                 <h4 className="achieve-number">85</h4>
                                 <p className="achieve-description">Региональных отделений</p>
-                                <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
+                                <img className="achieve-icon" src={achieve_icon_4} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
                                 <h4 className="achieve-number">400+</h4>
                                 <p className="achieve-description">Местных отделений</p>
-                                <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
+                                <img className="achieve-icon" src={achieve_icon_5} alt="achieve icon" />
                             </div>
                             <div className="achievement-item flex-column d-flex align-items-center col-6">
                                 <h4 className="achieve-number">19</h4>
                                 <p className="achieve-description">Представителей в 25 странах мира</p>
-                                <img className="achieve-icon" src={achieve_icon} alt="achieve icon" />
+                                <img className="achieve-icon" src={achieve_icon_6} alt="achieve icon" />
                             </div>
                         </div>
                     </div>
@@ -57,7 +62,7 @@ export default class Reviews extends Component {
                             <h2 className="section-description">Мнения наших коллег</h2>
                         </div>
                         <div className="review-wrapper" style={{ marginTop: '20px' }}>
-                            <div className="row no-gutters justify-content-center review-item">
+                            <div className="row no-gutters justify-content-center review-item d-flex">
                                 <img className="author-photo" src={person} alt="author" />
                                 <p className="review-text">
                                     Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
@@ -71,7 +76,7 @@ export default class Reviews extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row no-gutters justify-content-center review-item">
+                            <div className="row no-gutters justify-content-center review-item d-flex">
                                 <img className="author-photo" src={person} alt="author" />
                                 <p className="review-text">
                                     Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.

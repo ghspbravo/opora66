@@ -5,6 +5,21 @@ main>div:not(#main) {
     margin-bottom: 50px;
 }
 
+.prev-arrow {
+    left: 0;
+}
+
+.next-arrow {
+    right: 0;
+}
+
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
 .section-full {
     height: calc(100vh - 100px);
     min-height: 500px;
@@ -404,6 +419,8 @@ header {
     font-size: 14px;
     line-height: 1.8;
     font-weight: 300;
+    height: 100px;
+    overflow-y: auto;
 }
 
 .publication-link {
@@ -573,6 +590,7 @@ header {
     font-size: 42px;
     font-weight: 400;
     margin: 0;
+    text-align: center;
 }
 
 .achieve-description {
@@ -617,8 +635,10 @@ header {
     line-height: 2;
 }
 
-.review-item {
-    padding: 0 20%;
+.review-wrapper {
+    max-width: 500px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .author-social-item {
@@ -756,8 +776,12 @@ header {
 }
 
 .partners-video {
-    min-height: 300px;
     padding: 0 20px;
+    min-height: 50vh;
+}
+
+.partners-video video {
+    min-height: 40vh;
 }
 
 /* CONTACTS */
@@ -948,6 +972,9 @@ footer {
 
 /* SM */
 @media(max-width: 568px) {
+    .review-wrapper {
+        max-width: 320px;
+    }
     .header-brand {
         width: 200px;
     }
@@ -963,6 +990,10 @@ footer {
         padding-right: 10px !important;
     }
 
+    .achieve-number {
+        font-size: 32px;
+    }
+
     .nav-mobile {
         width: 65vw;
     }
@@ -972,7 +1003,7 @@ footer {
     }
 
     .review-item {
-        padding: 0;
+        padding: 0 15px;
     }
 
     .contact-input-row input {

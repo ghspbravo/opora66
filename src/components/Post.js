@@ -22,6 +22,8 @@ export default class Post extends Component {
 			.catch(() => this.setState({
 				isLoading: false,
 			}))
+
+			window.scrollTo(0,0)
 	}
 
 	render() {

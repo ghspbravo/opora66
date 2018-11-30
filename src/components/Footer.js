@@ -52,24 +52,24 @@ export default class Footer extends Component {
 							</div>
 							<div className="footer-links d-none d-md-flex flex-column">
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
+									<a className="footer-links-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
+									<a className="footer-links-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
 								</div>
 								<div className="footer-links-item">
-									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
+									<a className="footer-links-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
 								</div>
 							</div>
 							<div className="footer-links d-flex row d-md-none">
 								<div className="footer-links-item col-12">
-									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
+									<a className="footer-links-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
 								</div>
 								<div className="footer-links-item col-12">
-									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
+									<a className="footer-links-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
 								</div>
 								<div className="footer-links-item col-12">
-									<a className="footer-links-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
+									<a className="footer-links-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
 								</div>
 							</div>
 						</div>

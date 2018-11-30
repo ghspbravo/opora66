@@ -12,6 +12,9 @@ import transport from '../res/comitet-transport.png'
 import turism from '../res/comitet-turism.png'
 import woman from '../res/comitet-woman.png'
 import priroda from '../res/comitet-priroda.png'
+import dom from '../res/comitet-dom.png'
+import refresh from '../res/comitet-refresh.png'
+import media from '../res/comitet-media.png'
 
 export default class Comitets extends Component {
 	componentDidMount() {
@@ -107,6 +110,26 @@ export default class Comitets extends Component {
 									<p>Комитет по транспорту</p>
 								</div>
 							</div>
+							<div className="row d-flex no-gutters comitets-list">
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={dom} alt="" />
+									</div>
+									<p>Комитет по модернизации инфраструктуры жилищно-коммунального хозяйства</p>
+								</div>
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={refresh} alt="" />
+									</div>
+									<p>Комиссия по клининговой деятельности и обращению с отходами производства и потребления</p>
+								</div>
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={media} alt="" />
+									</div>
+									<p>Комиссия по art, медиа и киноиндустрии</p>
+								</div>
+							</div>
 						</div>
 						: <div className="comitets-wrapper">
 							<div className="row d-flex no-gutters comitets-list">
@@ -191,6 +214,28 @@ export default class Comitets extends Component {
 										<img src={transport} alt="" />
 									</div>
 									<p>Комитет по транспорту</p>
+								</div>
+							</div>
+							<div className="row d-flex no-gutters comitets-list">
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={dom} alt="" />
+									</div>
+									<p>Комитет по модернизации инфраструктуры жилищно-коммунального хозяйства</p>
+								</div>
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={refresh} alt="" />
+									</div>
+									<p>Комиссия по клининговой деятельности и обращению с отходами производства и потребления</p>
+								</div>
+							</div>
+							<div className="row d-flex no-gutters comitets-list">
+								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={media} alt="" />
+									</div>
+									<p>Комиссия по art, медиа и киноиндустрии</p>
 								</div>
 							</div>
 						</div>

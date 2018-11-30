@@ -20,16 +20,16 @@ export default class Payments extends Component {
                 <h1>Образцы документов</h1>
                 <ul>
                     <li>
-                        <a href="http://zotov-test.ru/wp-content/uploads/2018/11/Перечень-документов-для-.doc">Перечень документов для подачи заявления</a>
+                        <a href="http://opora66.ru/wp-content/uploads/2018/11/Перечень-документов-для-.doc">Перечень документов для подачи заявления</a>
                     </li>
                     <li>
-                        <a href="http://zotov-test.ru/wp-content/uploads/2018/11/Анкета-физ.лицо.doc">Анкета</a>
+                        <a href="http://opora66.ru/wp-content/uploads/2018/11/Анкета-физ.лицо.doc">Анкета</a>
                     </li>
-                    <li><a href="http://zotov-test.ru/wp-content/uploads/2018/11/Квитанция-на-оплату.doc">Квитанция на оплату</a></li>
-                    <li><a href="http://zotov-test.ru/wp-content/uploads/2018/11/Реквизиты-Опора-России.doc">Реквизиты Опоры</a></li>
-                    <li><a href="http://zotov-test.ru/wp-content/uploads/2018/11/Согласие-на-обработку-персональных-данных.xls">Согласие на обработку данных</a></li>
-                    <li><a href="http://zotov-test.ru/wp-content/uploads/2018/11/Учетная-карточка.doc">Учетная карточка</a></li>
-                    <li><a href="http://zotov-test.ru/wp-content/uploads/2018/11/Заявление.doc">Заявление</a></li>
+                    <li><a href="http://opora66.ru/wp-content/uploads/2018/11/Квитанция-на-оплату.doc">Квитанция на оплату</a></li>
+                    <li><a href="http://opora66.ru/wp-content/uploads/2018/11/Реквизиты-Опора-России.doc">Реквизиты Опоры</a></li>
+                    <li><a href="http://opora66.ru/wp-content/uploads/2018/11/Согласие-на-обработку-персональных-данных.xls">Согласие на обработку данных</a></li>
+                    <li><a href="http://opora66.ru/wp-content/uploads/2018/11/Учетная-карточка.doc">Учетная карточка</a></li>
+                    <li><a href="http://opora66.ru/wp-content/uploads/2018/11/Заявление.doc">Заявление</a></li>
                 </ul>
             </div>`
         )
@@ -41,7 +41,7 @@ export default class Payments extends Component {
                 <div className="container section-content">
                     <div className="section-title title-center">
                         <h1 className="section-name">Пожертвования и членские взносы</h1>
-                        <h2 className="section-description">Членские взносы</h2>
+                        <h2 className="section-description">Порядок вступления</h2>
                     </div>
                     {/* <div className="row justify-content-center payments-wrapper">
                         <div className="payment-item">
