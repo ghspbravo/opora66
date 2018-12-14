@@ -13,7 +13,7 @@ export default class Footer extends Component {
 			<footer style={{ backgroundColor: '#1A1A26' }}>
 				<div className="container footer-content">
 					<div className="row">
-						<div className="col-sm-3">
+						<div className="col-md-3">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">Опора</h2>
 							</div>
@@ -46,7 +46,7 @@ export default class Footer extends Component {
 								</div>
 							</div>
 						</div>
-						<div className="col-sm-3">
+						<div className="col-md-3">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">Документы</h2>
 							</div>
@@ -73,7 +73,7 @@ export default class Footer extends Component {
 								</div>
 							</div>
 						</div>
-						<div className="col-sm-6">
+						<div className="col-md-6">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">
 									Подпишитесь на рассылку новостей

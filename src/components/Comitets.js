@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import stroitelstvo from '../res/comitet-stroitelstvo.png'
 import bozopasnost from '../res/comitet-bozopasnost.png'
@@ -41,12 +42,12 @@ export default class Comitets extends Component {
 									</div>
 									<p>Комитет по развитию женского предпринимательства</p>
 								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=240' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={molod} alt="" />
 									</div>
 									<p>Комитет по молодежному предпринимательству</p>
-								</div>
+								</Link>
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={stroitelstvo} alt="" />
@@ -97,12 +98,12 @@ export default class Comitets extends Component {
 									</div>
 									<p>Комитет по энергетике</p>
 								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=238' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={invest} alt="" />
 									</div>
 									<p>Комитет по инвестициям</p>
-								</div>
+								</Link>
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={transport} alt="" />
@@ -111,22 +112,22 @@ export default class Comitets extends Component {
 								</div>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=236' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={dom} alt="" />
 									</div>
 									<p>Комитет по модернизации инфраструктуры жилищно-коммунального хозяйства</p>
-								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								</Link>
+								<Link to='p=232' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={refresh} alt="" />
 									</div>
 									<p>Комиссия по клининговой деятельности и обращению с отходами производства и потребления</p>
-								</div>
+								</Link>
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
-									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+									<Link to='p=234' className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={media} alt="" />
-									</div>
+									</Link>
 									<p>Комиссия по art, медиа и киноиндустрии</p>
 								</div>
 							</div>
@@ -139,12 +140,12 @@ export default class Comitets extends Component {
 									</div>
 									<p>Комитет по развитию женского предпринимательства</p>
 								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=240' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={molod} alt="" />
 									</div>
 									<p>Комитет по молодежному предпринимательству</p>
-								</div>
+								</Link>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
@@ -203,12 +204,12 @@ export default class Comitets extends Component {
 								</div>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=238' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={invest} alt="" />
 									</div>
 									<p>Комитет по инвестициям</p>
-								</div>
+								</Link>
 								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={transport} alt="" />
@@ -217,26 +218,26 @@ export default class Comitets extends Component {
 								</div>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=236' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={dom} alt="" />
 									</div>
 									<p>Комитет по модернизации инфраструктуры жилищно-коммунального хозяйства</p>
-								</div>
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								</Link>
+								<Link to='p=232' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={refresh} alt="" />
 									</div>
 									<p>Комиссия по клининговой деятельности и обращению с отходами производства и потребления</p>
-								</div>
+								</Link>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
-								<div className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=234' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={media} alt="" />
 									</div>
 									<p>Комиссия по art, медиа и киноиндустрии</p>
-								</div>
+								</Link>
 							</div>
 						</div>
 					}

@@ -28,7 +28,6 @@ export default class Publications extends Component {
     }
 
     loadCategory = (category) => {
-
         fetch(`${this.props.server}/categories/${category}`)
             .then(data => data.json())
             .then(data => this.setState({
@@ -40,6 +39,9 @@ export default class Publications extends Component {
     }
 
     loadPublications = (category = null, page = null) => {
+        this.setState(() => ({
+            publicationsLoading: true
+        }))
         fetch(`${this.props.server}/posts?categories=${category ? category : this.state.currentCategory}&per_page=${this.state.postsPerPage}&page=${page ? page : this.state.pageToLoad}&_embed`)
             .then(data => data.json())
             .then(data => this.setState({
