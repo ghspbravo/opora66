@@ -13,7 +13,7 @@ export default class Footer extends Component {
 			<footer style={{ backgroundColor: '#1A1A26' }}>
 				<div className="container footer-content">
 					<div className="row">
-						<div className="col-md-3">
+						{/* <div className="col-md-3">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">Опора</h2>
 							</div>
@@ -45,7 +45,7 @@ export default class Footer extends Component {
 									<a className="footer-links-item-link" href="http://opora66.ru" target='blank'>Опора</a>
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className="col-md-3">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">Документы</h2>
@@ -73,7 +73,7 @@ export default class Footer extends Component {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6">
+						{/* <div className="col-md-6">
 							<div className="footer-title-wrapper">
 								<h2 className="footer-title">
 									Подпишитесь на рассылку новостей
@@ -98,7 +98,7 @@ export default class Footer extends Component {
 									<img src={socialFB} alt="facebook" className="footer-social-item-icon" />
 								</a>
 							</div>
-						</div>
+						</div> */}
 					</div>
 					<div className="row footer-credits" style={{ marginTop: '30px' }}>
 						<div className="col-lg-6">

@@ -63,31 +63,31 @@ export default class Reviews extends Component {
                         </div>
                         <div className="review-wrapper" style={{ marginTop: '20px' }}>
                             <div className="row no-gutters justify-content-center review-item d-flex">
-                                <img className="author-photo" src={person} alt="author" />
+                                {/* <img className="author-photo" src={person} alt="author" /> */}
                                 <p className="review-text">
-                                    Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    С ОПОРОЙ РОССИИ я познакомился в конце 2018 года, благодаря проекту "Ты-предприниматель". Когда пришел на первую образовательную программу, нам презентовали огромное сообщество предпринимателей, и я понял что это то, чего мне не хватало - окружение активных, позитивных и меняющих мир людей. Находясь в этой среде, очень трудно оставаться на прежнем уровне. Я очень рад найти таких людей и иметь возможность с ними общаться.
                                 </p>
                                 <div className="review-author-info" style={{ marginTop: '50px' }}>
-                                    <div className="author-name">Имя Фамилия</div>
-                                    <div style={{ marginTop: '5px' }} className="author-occupation">Чем занимается</div>
-                                    <div className="row justify-content-center author-social" style={{ marginTop: '20px' }}>
+                                    <div className="author-name">Роман Чередниченко</div>
+                                    {/* <div style={{ marginTop: '5px' }} className="author-occupation">Чем занимается</div> */}
+                                    {/* <div className="row justify-content-center author-social" style={{ marginTop: '20px' }}>
                                         <a className="author-social-item" href="http://opora66.ru"><img src={facebook} alt="" /></a>
                                         <a className="author-social-item" href="http://opora66.ru"><img src={facebook} alt="" /></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="row no-gutters justify-content-center review-item d-flex">
-                                <img className="author-photo" src={person} alt="author" />
+                                {/* <img className="author-photo" src={person} alt="author" /> */}
                                 <p className="review-text">
-                                    Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    С ОПОРОЙ РОССИИ я познакомился в 2018 г. помимо знакомства с новыми и интересными людьми, я нашёл единомышленников и первых клиентов своего нового бизнеса TITAN STYLE- крутые украшения из титана.
                                 </p>
                                 <div className="review-author-info" style={{ marginTop: '50px' }}>
-                                    <div className="author-name">Имя Фамилия</div>
-                                    <div style={{ marginTop: '5px' }} className="author-occupation">Чем занимается</div>
+                                    <div className="author-name">Андрей Евланов</div>
+                                    {/* <div style={{ marginTop: '5px' }} className="author-occupation">Чем занимается</div>
                                     <div className="row justify-content-center author-social" style={{ marginTop: '20px' }}>
                                         <a className="author-social-item" href="http://opora66.ru"><img src={facebook} alt="" /></a>
                                         <a className="author-social-item" href="http://opora66.ru"><img src={facebook} alt="" /></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
