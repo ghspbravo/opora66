@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import about from '../res/about.jpg'
+import about from '../res/aboutPic.jpg'
 import tingle from '../tingle'
 
 export default class About extends Component {
@@ -16,13 +16,13 @@ export default class About extends Component {
             `<div class="management-all-wrapper">
             <h1 class="management-all-title">Уставные документы</h1>
             <div class="documents-popup-item">
-                <a class="documents-popup-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
+                <a class="documents-popup-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/Устав-ОПОРЫ-РОССИИ-2017.pdf" target='blank'>Устав Опоры России</a>
             </div>
             <div class="documents-popup-item">
-                <a class="documents-popup-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
+                <a class="documents-popup-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/Положение-о-комитетах-и-.pdf" target='blank'>Положение о комитетах и комиссиях</a>
             </div>
             <div class="documents-popup-item">
-                <a class="documents-popup-item-link" href="http://zotov-test.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
+                <a class="documents-popup-item-link" href="http://opora66.ru/wp-content/uploads/2018/11/ПОЛОЖЕНИЕ-о-региональном-и-местном-отделении.pdf" target='blank'>Положение о региональном и местном отделении</a>
             </div>
         </div>`
         )
