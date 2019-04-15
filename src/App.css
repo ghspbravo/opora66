@@ -191,11 +191,6 @@ section p {
     line-height: 1.5;
 }
 
-.post-single img {
-    height: auto;
-    width: 100%;
-}
-
 .post-single-back {
     background: none;
     border: none;
