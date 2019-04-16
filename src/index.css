@@ -518,5 +518,6 @@ img.size-thumbnail {
 }
 
 img.size-full {
-    height: auto;
+		height: unset;
+		width: unset;
 }
