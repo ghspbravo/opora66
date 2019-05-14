@@ -48,7 +48,7 @@ export default class About extends Component {
                                 «ОПОРА РОССИИ» является площадкой для эффективного профессионального диалога владельцев и руководителей предприятий малого и среднего бизнеса и представителей федеральных органов исполнительной власти, региональной власти и муниципалитетов, контролирующих органов, инфраструктуры поддержки малого и среднего предпринимательства, а также представителей экспертного сообщества.
                             </p>
                             <div className="row no-gutters" style={{ marginTop: '40px' }}>
-                                <a href='http://opora.ru/' target="_blank" className="button button-light">Узнать больше</a>
+                                <a href='http://opora.ru/' rel="noopener noreferrer" target="_blank" className="button button-light">Узнать больше</a>
                                 <button
                                     onClick={() => this.docs.open()}
                                     style={{ marginLeft: 'auto' }}

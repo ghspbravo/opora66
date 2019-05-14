@@ -7,9 +7,9 @@ import achieve_icon_4 from '../res/achieve-icon-4.png'
 import achieve_icon_5 from '../res/achieve-icon-5.png'
 import achieve_icon_6 from '../res/achieve-icon-6.png'
 
-import person from '../res/management_person.png'
+// import person from '../res/management_person.png'
 
-import facebook from '../res/social-fb.svg'
+// import facebook from '../res/social-fb.svg'
 
 export default class Reviews extends Component {
     componentDidMount() {

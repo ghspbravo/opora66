@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
-import letter from '../res/letter-icon.png'
-import socialFB from '../res/social-fb.svg'
-import socialVK from '../res/social-vk.svg'
-import socialIM from '../res/social-im.svg'
+// import letter from '../res/letter-icon.png'
+// import socialFB from '../res/social-fb.svg'
+// import socialVK from '../res/social-vk.svg'
+// import socialIM from '../res/social-im.svg'
 
 export default class Footer extends Component {
 	render() {
