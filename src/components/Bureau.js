@@ -7,7 +7,7 @@ export default class Bureau extends Component {
 	render() {
 		return (
 			<div>
-				<div class="container">
+				<div className="container">
 					<button className="post-single-back" onClick={() => this.props.history.goBack()} >← Назад</button>
 					<h1>О бюро</h1>
 					<p>
