@@ -3,12 +3,14 @@ import 'normalize.css'
 import './App.css';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Post from './components/Post';
 import Bureau from './components/Bureau';
+import Video from './pages/video';
 
 class App extends Component {
 
@@ -44,11 +46,12 @@ class App extends Component {
 				<main>
 					<nav className="d-lg-none nav-mobile-wrapper" onClick={this.handleMobileNavClose}>
 						<div className="nav-mobile">
-							<a className="header-nav-mobile-item" href="#about">О нас</a>
-							<a className="header-nav-mobile-item" href="#publications">Новости</a>
+							<HashLink className="header-nav-mobile-item" to="/#about">О нас</HashLink>
+							<HashLink className="header-nav-mobile-item" to="/#publications">Новости</HashLink>
 							<Link className="header-nav-mobile-item" to="/bureau">Бюро</Link>
-							<a className="header-nav-mobile-item" href="#contacts">Контакты</a>
-							<a className="header-nav-mobile-item" href="#management">Члены Организации</a>
+							<Link className="header-nav-mobile-item" to="/video">Видео</Link>
+							<HashLink className="header-nav-mobile-item" to="/#contacts">Контакты</HashLink>
+							<HashLink className="header-nav-mobile-item" to="/#management">Члены Организации</HashLink>
 						</div>
 					</nav>
 					<Header />
@@ -56,7 +59,9 @@ class App extends Component {
 						<Main server={this.SERVER} />} />
 					<Route path="/p=:id" render={({ history, match }) =>
 						<Post server={this.SERVER} id={match.params.id} goBack={history.goBack} />} />
-					<Route path="/bureau" component={Bureau} />
+					<Route exact path="/bureau" component={Bureau} />
+					<Route exact path="/video" render={({ history }) =>
+						<Video server={this.SERVER} goBack={history.goBack} />} /> />
 					<Footer />
 				</main>
 			</Router>

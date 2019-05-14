@@ -37,6 +37,7 @@ export default class Header extends Component {
 						<HashLink className="header-nav-item" to="/#about">О нас</HashLink>
 						<HashLink className="header-nav-item" to="/#publications">Новости</HashLink>
 						<Link className="header-nav-item" to="/bureau">Бюро</Link>
+						<Link className="header-nav-item" to="/video">Видео</Link>
 						<HashLink className="header-nav-item" to="/#contacts">Контакты</HashLink>
 						<HashLink className="header-nav-item" to="/#management">Члены Организации</HashLink>
 					</nav>
