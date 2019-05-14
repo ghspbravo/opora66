@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 import burger from '../res/burger.svg'
 import brand from '../res/OporaBrandBlue.png'
@@ -33,11 +34,11 @@ export default class Header extends Component {
 						</Link>
 					</div>
 					<nav className="col d-lg-flex d-none row justify-content-center header-nav nav-desktop">
-						<a className="header-nav-item" href="/#about">О нас</a>
-						<a className="header-nav-item" href="/#publications">Новости</a>
+						<HashLink className="header-nav-item" to="/#about">О нас</HashLink>
+						<HashLink className="header-nav-item" to="/#publications">Новости</HashLink>
 						<Link className="header-nav-item" to="/bureau">Бюро</Link>
-						<a className="header-nav-item" href="/#contacts">Контакты</a>
-						<a className="header-nav-item" href="/#management">Члены Организации</a>
+						<HashLink className="header-nav-item" to="/#contacts">Контакты</HashLink>
+						<HashLink className="header-nav-item" to="/#management">Члены Организации</HashLink>
 					</nav>
 					<div className="col col-lg-2 header-controls d-none d-md-block">
 						<button onClick={() => document.querySelector('#payments').scrollIntoView({
