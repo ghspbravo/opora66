@@ -61,7 +61,7 @@ class App extends Component {
 						<Post server={this.SERVER} id={match.params.id} goBack={history.goBack} />} />
 					<Route exact path="/bureau" component={Bureau} />
 					<Route exact path="/video" render={({ history }) =>
-						<Video server={this.SERVER} goBack={history.goBack} />} /> />
+						<Video server={this.SERVER} goBack={history.goBack} />} />
 					<Footer />
 				</main>
 			</Router>
