@@ -116,6 +116,7 @@ section p {
 }
 
 .button {
+    display: block;
     padding: 20px 40px;
     background: none;
     border: none;

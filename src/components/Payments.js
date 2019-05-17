@@ -74,7 +74,16 @@ export default class Payments extends Component {
                         <br />2.  по квитанции через банк;
                         <br />3.  в бухгалтерии Свердловского  отделения "ОПОРЫ РОССИИ" по адресу: г. Екатеринбург,  ул. Юмашева, 11
                     </p>
-                    <button onClick={() => this.docs.open()} className="button button-light" >Образцы документов</button>
+                    <div className="row no-gutters">
+                        <div>
+                            <a target="_blank" rel="noopener noreferrer" className="button button-light" href="https://money.yandex.ru/my/i/XN7IwEnrtrgd">Оплатить взнос</a>
+                        </div>
+                        <div style={{
+                            marginLeft: "15px"
+                        }}>
+                            <button onClick={() => this.docs.open()} className="button button-light" >Образцы документов</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         )
