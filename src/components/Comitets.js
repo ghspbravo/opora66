@@ -19,6 +19,7 @@ import media from '../res/comitet-media.png'
 import social from '../res/comitet-social.png'
 import selhos from '../res/comitet-selhos.png'
 import police from '../res/comitet-police.png'
+import recycle from '../res/comitet-recycle.png'
 
 export default class Comitets extends Component {
 	componentDidMount() {
@@ -152,6 +153,15 @@ export default class Comitets extends Component {
 									<p>Комиссия по art, медиа и киноиндустрии</p>
 								</Link>
 							</div>
+							<div className="row d-flex no-gutters comitets-list">
+								<Link to='p=2286' className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={recycle} alt="" />
+									</div>
+									<p>Комитет по реформированию отрасли обращения с отходами</p>
+								</Link>
+
+							</div>
 						</div>
 						: <div className="comitets-wrapper">
 							<div className="row d-flex no-gutters comitets-list">
@@ -253,7 +263,7 @@ export default class Comitets extends Component {
 								</Link>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
-							<Link to='p=1563' className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=1563' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={selhos} alt="" />
 									</div>
@@ -267,7 +277,7 @@ export default class Comitets extends Component {
 								</Link>
 							</div>
 							<div className="row d-flex no-gutters comitets-list">
-							<Link to='p=232' className="comitets-item col-md-4 d-flex flex-column align-items-center">
+								<Link to='p=232' className="comitets-item col-md-4 d-flex flex-column align-items-center">
 									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
 										<img src={refresh} alt="" />
 									</div>
@@ -278,6 +288,14 @@ export default class Comitets extends Component {
 										<img src={media} alt="" />
 									</div>
 									<p>Комиссия по art, медиа и киноиндустрии</p>
+								</Link>
+							</div>
+							<div className="row d-flex no-gutters comitets-list">
+								<Link to='p=2286' className="comitets-item col-md-4 d-flex flex-column align-items-center">
+									<div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
+										<img src={recycle} alt="" />
+									</div>
+									<p>Комитет по реформированию отрасли обращения с отходами</p>
 								</Link>
 							</div>
 						</div>
