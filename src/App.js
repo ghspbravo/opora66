@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'normalize.css'
 import './App.css';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 import Header from './components/Header';
