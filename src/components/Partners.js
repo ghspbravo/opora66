@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from 'react'
 
 import sber from '../res/partners/sber.png'
@@ -9,6 +10,10 @@ import policyDepart from '../res/partners/policyDepart.png'
 import selhos from '../res/partners/selhos.png'
 import uralSib from '../res/partners/uralSib.png'
 import zawitaPrav from '../res/partners/zawitaPrav.png'
+import alpha from '../res/partners/alpha.png'
+import psb from '../res/partners/psb.png'
+
+import invest from '../res/partners/invest.jpeg'
 
 import video from '../res/oporaVideo.mp4'
 import videoThumbnail from '../res/OporaBrand.png'
@@ -64,6 +69,15 @@ export default class Partners extends Component {
                                             <div className="partner-item d-flex align-content-center justify-items-center">
                                                 <a target='blank' href="https://www.mrsk-ural.ru/"><img src={mrck} alt="partner logo" /></a>
                                             </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="http://invest-in-ural.ru/"><img src={invest} alt="partner logo" /></a>
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="https://alfabank.ru/"><img src={alpha} alt="partner logo" /></a>
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="https://www.psbank.ru/"><img src={psb} alt="partner logo" /></a>
+                                            </div>
                                         </div>
                                     </div>
                                     : <div className="partners-wrapper">
@@ -102,6 +116,17 @@ export default class Partners extends Component {
                                         <div className="row d-flex no-gutters partners-list justify-content-center">
                                             <div className="partner-item d-flex align-content-center justify-items-center">
                                                 <a target='blank' href="https://www.mrsk-ural.ru/"><img src={mrck} alt="partner logo" /></a>
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="http://invest-in-ural.ru/"><img src={invest} alt="partner logo" /></a>
+                                            </div>
+                                        </div>
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="https://alfabank.ru/"><img src={alpha} alt="partner logo" /></a>
+                                            </div>
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="https://www.psbank.ru/"><img src={psb} alt="partner logo" /></a>
                                             </div>
                                         </div>
                                     </div>
