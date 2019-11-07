@@ -12,6 +12,7 @@ import uralSib from '../res/partners/uralSib.png'
 import zawitaPrav from '../res/partners/zawitaPrav.png'
 import alpha from '../res/partners/alpha.png'
 import psb from '../res/partners/psb.png'
+import pp from '../res/partners/pp.png'
 
 import invest from '../res/partners/invest.jpeg'
 
@@ -79,6 +80,11 @@ export default class Partners extends Component {
                                                 <a target='blank' href="https://www.psbank.ru/"><img src={psb} alt="partner logo" /></a>
                                             </div>
                                         </div>
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="https://zakupki.mos.ru/ "><img src={pp} alt="partner logo" /></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     : <div className="partners-wrapper">
                                         <div className="row d-flex no-gutters partners-list justify-content-center">
@@ -127,6 +133,11 @@ export default class Partners extends Component {
                                             </div>
                                             <div className="partner-item d-flex align-content-center justify-items-center">
                                                 <a target='blank' href="https://www.psbank.ru/"><img src={psb} alt="partner logo" /></a>
+                                            </div>
+                                        </div>
+                                        <div className="row d-flex no-gutters partners-list justify-content-center">
+                                            <div className="partner-item d-flex align-content-center justify-items-center">
+                                                <a target='blank' href="https://zakupki.mos.ru/"><img src={pp} alt="partner logo" /></a>
                                             </div>
                                         </div>
                                     </div>
