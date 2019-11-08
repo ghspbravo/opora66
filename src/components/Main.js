@@ -15,26 +15,26 @@ import Adress from './Adress';
 import Comitets from './Comitets';
 
 export default class Main extends Component {
-	componentDidMount() {
-		window.scrollTo(0,0)
-	}
-	render() {
-		return (
-			<div id="main" className="tingle-content-wrapper">
-				<Banner />
-				<About />
-				<Progress />
-				<Comitets />
-				<Publications server={this.props.server} />
-				<Map />
-				<Management server={this.props.server} />
-				<Reviews />
-				<Steps />
-				<Payments />
-				<Partners />
-				<Contacts />
-				<Adress />
-			</div>
-		)
-	}
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+  render() {
+    return (
+      <div id="main" className="tingle-content-wrapper">
+        <Banner />
+        <About />
+        <Progress />
+        <Comitets server={this.props.server}/>
+        <Publications server={this.props.server} />
+        <Map />
+        <Management server={this.props.server} />
+        <Reviews />
+        <Steps />
+        <Payments />
+        <Partners server={this.props.server}/>
+        <Contacts />
+        <Adress />
+      </div>
+    )
+  }
 }

@@ -358,10 +358,14 @@ header {
 }
 
 /* COMITETS */
+.comitets-container {
+  height: 600px;
+}
 
 .comitets-item {
     margin: 20px 0;
     padding: 0 10px;
+    height: 200px;
 }
 
 .comitets-item p {
@@ -374,6 +378,7 @@ header {
     box-shadow: rgba(0,0,0,0.2) 0 2px 8px;
     width: 120px;
     height: 120px;
+    margin: 0 auto;
 }
 
 .comitets-item-thumbnail img {
@@ -749,14 +754,23 @@ header {
 
 /* PARTNERS */
 
+.partners-container {
+  height: 400px;
+}
+
+@media screen and (max-width: 568px) {
+  .partners-container {
+    height: 300px;
+  }
+  
+}
+
 .partner-item {
-    width: 220px !important;
-    height: 100px;
+    height: 100px !important;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
     padding: 5px 10px;
-    margin: 20px;
     position: relative;
 }
 
@@ -1033,4 +1047,14 @@ footer {
     .management-section ul {
         padding-left: 0;
     }
+}
+
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
 }

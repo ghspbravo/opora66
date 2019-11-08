@@ -1,7 +1,6 @@
 {
   "name": "opora66",
-  "version": "0.1.0",
-  "homepage": "http://ghspbravo.github.io/frontend",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "html-react-parser": "^0.4.7",
@@ -13,17 +12,15 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "2.0.5",
-    "react-yandex-maps": "^3.0.2"
+    "react-scripts": "^2.0.5",
+    "react-yandex-maps": "^3.0.2",
+    "swiper": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",

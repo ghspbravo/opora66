@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import 'normalize.css'
+import '../node_modules/swiper/css/swiper.min.css';
 import './App.css';
+
 
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
