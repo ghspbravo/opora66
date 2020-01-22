@@ -4,19 +4,19 @@ import tingle from '../tingle'
 import '../tingle.css'
 
 export default class Payments extends Component {
-    docs = new tingle.modal({
-        closeMethods: ['overlay', 'button', 'escape'],
-        closeLabel: "Закрыть",
-    });
+  docs = new tingle.modal({
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Закрыть",
+  });
 
-    componentWillUnmount() {
-        this.docs.destroy()
-    }
+  componentWillUnmount() {
+    this.docs.destroy()
+  }
 
-    componentDidMount() {
+  componentDidMount() {
 
-        this.docs.setContent(
-            ` <div class="payments-documents">
+    this.docs.setContent(
+      ` <div class="payments-documents">
                 <h1>Образцы документов</h1>
                 <ul>
                     <li>
@@ -32,18 +32,18 @@ export default class Payments extends Component {
                     <li><a href="http://opora66.ru/wp-content/uploads/2018/11/Заявление.doc">Заявление</a></li>
                 </ul>
             </div>`
-        )
-    }
+    )
+  }
 
-    render() {
-        return (
-            <section id="payments" className="section-acsent-light">
-                <div className="container section-content">
-                    <div className="section-title title-center">
-                        <h1 className="section-name">Пожертвования и членские взносы</h1>
-                        <h2 className="section-description">Порядок вступления</h2>
-                    </div>
-                    {/* <div className="row justify-content-center payments-wrapper">
+  render() {
+    return (
+      <section id="payments" className="section-acsent-light">
+        <div className="container section-content">
+          <div className="section-title title-center">
+            <h1 className="section-name">Пожертвования и членские взносы</h1>
+            <h2 className="section-description">Порядок вступления</h2>
+          </div>
+          {/* <div className="row justify-content-center payments-wrapper">
                         <div className="payment-item">
                             <div className="payment-header">
                                 <h3 className="payment-name">Стандартный</h3>
@@ -65,27 +65,40 @@ export default class Payments extends Component {
                             </div>
                         </div>
                     </div> */}
-                    <p>
-                        Для вступления в Свердловское отделение <b>«ОПОРЫ РОССИИ»</b> Вам необходимо направить заполненный пакет документов, Вашу фотографию и копию 2-ух страниц паспорта (пасп.данные, прописка) на электронный ящик <a href="mailto:opora-66@mail.ru">opora-66@mail.ru</a>.
+          <p>
+            Для вступления в Свердловское отделение <b>«ОПОРЫ РОССИИ»</b> Вам необходимо направить заполненный пакет документов, Вашу фотографию и копию 2-ух страниц паспорта (пасп.данные, прописка) на электронный ящик <a href="mailto:opora-66@mail.ru">opora-66@mail.ru</a>.
                         <br /> А также необходимо внести вступительный взнос в размере <b>5000 рублей</b>.
                         <br />
-                        <br />Совершить оплату вступительного взноса можно несколькими способами:
-                        <br />1. по реквизитам (убедительная просьба в основании платежа указать: «вступительный взнос за ФИО ( полностью ),  без НДС .»);
-                        <br />2.  по квитанции через банк;
-                        <br />3.  в бухгалтерии Свердловского  отделения "ОПОРЫ РОССИИ" по адресу: г. Екатеринбург,  ул. Юмашева, 11
+            <br />Совершить оплату вступительного взноса можно несколькими способами:
+                        <br />1. по кнопке ниже, уазав свой почтовый адрес и имя
+                        <br />2. по реквизитам (убедительная просьба в основании платежа указать: «вступительный взнос за ФИО ( полностью ),  без НДС .»);
+                        <br />3.  по квитанции через банк;
+                        <br />4.  в бухгалтерии Свердловского  отделения "ОПОРЫ РОССИИ" по адресу: г. Екатеринбург,  ул. Юмашева, 11
                     </p>
-                    <div className="row no-gutters">
-                        <div>
-                            <a target="_blank" rel="noopener noreferrer" className="button button-light" href="https://money.yandex.ru/my/i/XN7IwEnrtrgd">Оплатить взнос</a>
-                        </div>
-                        <div style={{
-                            marginLeft: "15px"
-                        }}>
-                            <button onClick={() => this.docs.open()} className="button button-light" >Образцы документов</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        )
-    }
+          <form action="https://money.yandex.ru/eshop.xml" method="post">
+            <input name="paymentType" value="" type="hidden" />
+            <input name="shopId" value="180508" type="hidden" />
+            <input name="scid" value="714672" type="hidden" />
+            <input name="sum" type="hidden" value="5000" />
+            {/* <input name="customerNumber" value="100500" /> */}
+            {/* <input name="cps_phone" value="79110000000" /> */}
+            <input className="contact-input-item col-12" name="cps_name" style={{ maxWidth: 320 }} placeholder="ФИО" required />
+            <input className="contact-input-item col-12" name="cps_email" style={{ maxWidth: 320, marginTop: '10px' }} placeholder="Ваш почтовый адрес" required />
+
+            <div style={{ marginTop: '20px' }} className="row no-gutters">
+              <input className='button button-acsent' type="submit" value="Оплатить взнос" />
+              <div style={{
+                marginLeft: "15px"
+              }}>
+                <button type="button" onClick={() => this.docs.open()} className="button button-light" >Образцы документов</button>
+              </div>
+            </div>
+          </form>
+          {/* <div>
+              <a target="_blank" rel="noopener noreferrer" className="button button-light" href="https://money.yandex.ru/my/i/XN7IwEnrtrgd">Оплатить взнос</a>
+            </div> */}
+        </div>
+      </section>
+    )
+  }
 }
