@@ -755,14 +755,7 @@ header {
 /* PARTNERS */
 
 .partners-container {
-  height: 400px;
-}
-
-@media screen and (max-width: 568px) {
-  .partners-container {
-    height: 300px;
-  }
-  
+  padding-bottom: 50px;
 }
 
 .partner-item {

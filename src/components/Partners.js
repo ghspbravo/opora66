@@ -36,6 +36,7 @@ export default class Partners extends Component {
       })
     }).then(() => {
       const swiper = new Swiper(".partners-container", {
+        slidesPerColumnFill: 'row',
         slidesPerView: 1,
         slidesPerColumn: 2,
 
