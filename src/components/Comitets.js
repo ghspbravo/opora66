@@ -32,10 +32,12 @@ export default class Comitets extends Component {
       })
     }).then(() => {
       const swiper = new Swiper(".comitets-container", {
+        slidesPerColumnFill: 'row',
+
         slidesPerView: 1,
         slidesPerColumn: 2,
+        spaceBetween: 30,
 
-        spaceBetween: 20,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -44,8 +46,8 @@ export default class Comitets extends Component {
         breakpoints: {
           568: {
             slidesPerView: 2,
-            slidesPerColumn: 3,
-            spaceBetween: 30,
+            slidesPerColumn: 2,
+            spaceBetween: 20,
           }
         }
       });
