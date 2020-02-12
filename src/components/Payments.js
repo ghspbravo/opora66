@@ -75,15 +75,13 @@ export default class Payments extends Component {
                         <br />3.  по квитанции через банк;
                         <br />4.  в бухгалтерии Свердловского  отделения "ОПОРЫ РОССИИ" по адресу: г. Екатеринбург,  ул. Юмашева, 11
                     </p>
+          {/* Docs: https://kassa.yandex.ru/tech/payment-form/payment-form-http.html */}
           <form action="https://money.yandex.ru/eshop.xml" method="post">
             <input name="paymentType" value="" type="hidden" />
             <input name="shopId" value="180508" type="hidden" />
             <input name="scid" value="714672" type="hidden" />
             <input name="sum" type="hidden" value="5000" />
-            {/* <input name="customerNumber" value="100500" /> */}
-            {/* <input name="cps_phone" value="79110000000" /> */}
-            <input className="contact-input-item col-12" name="cps_name" style={{ maxWidth: 320 }} placeholder="ФИО" required />
-            <input className="contact-input-item col-12" name="cps_email" style={{ maxWidth: 320, marginTop: '10px' }} placeholder="Ваш почтовый адрес" required />
+            <input className="contact-input-item col-12" name="customerNumber" style={{ maxWidth: 320 }} placeholder="ФИО" required />
 
             <div style={{ marginTop: '20px' }} className="row no-gutters">
               <input className='button button-acsent' type="submit" value="Оплатить взнос" />
