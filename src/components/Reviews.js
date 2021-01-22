@@ -5,7 +5,7 @@ import achieve_icon_2 from '../res/achieve-icon-2.png'
 import achieve_icon_3 from '../res/achieve-icon-3.png'
 import achieve_icon_4 from '../res/achieve-icon-4.png'
 import achieve_icon_5 from '../res/achieve-icon-5.png'
-import achieve_icon_6 from '../res/achieve-icon-6.png'
+import achieve_icon_6 from '../res/achieve-icon-world.png'
 
 // import person from '../res/management_person.png'
 
@@ -49,7 +49,7 @@ export default class Reviews extends Component {
                 <p className="achieve-description">Местных отделений</p>
                 <img className="achieve-icon" src={achieve_icon_5} alt="achieve icon" />
               </div>
-              <a className="__withoutLine achievement-item flex-column d-flex align-items-center col-6" href="https://opora.ru/world/" target="_blank" rel="noopener noreferrer">
+              <a className="__withoutLine achievement-item __withHover flex-column d-flex align-items-center col-6" href="https://opora.ru/world/" target="_blank" rel="noopener noreferrer">
                 <h4 className="achieve-number">&nbsp;</h4>
                 <p className="achieve-description">Международная деятельность</p>
                 <img className="achieve-icon" src={achieve_icon_6} alt="achieve icon" />

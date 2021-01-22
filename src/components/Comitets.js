@@ -37,6 +37,7 @@ export default class Comitets extends Component {
         slidesPerView: 1,
         slidesPerColumn: 2,
         spaceBetween: 30,
+        slidesPerGroup: 1,
 
         pagination: {
           el: '.swiper-pagination',
@@ -48,6 +49,7 @@ export default class Comitets extends Component {
             slidesPerView: 2,
             slidesPerColumn: 2,
             spaceBetween: 20,
+            slidesPerGroup: 2,
           }
         }
       });

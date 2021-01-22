@@ -40,6 +40,8 @@ export default class Partners extends Component {
         slidesPerView: 1,
         slidesPerColumn: 2,
 
+        slidesPerGroup: 1,
+
         spaceBetween: 20,
         pagination: {
           el: '.swiper-pagination',
@@ -51,6 +53,7 @@ export default class Partners extends Component {
             slidesPerView: 2,
             slidesPerColumn: 3,
             spaceBetween: 30,
+            slidesPerGroup: 2,
           }
         }
       });

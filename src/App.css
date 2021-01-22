@@ -608,6 +608,10 @@ header {
     border: 1px solid lightgray;
 }
 
+.achievement-item.__withHover:hover {
+	box-shadow: inset 2px 5px 16px 0px #0b325e, inset 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
 .author-photo {
     width: 83px;
     height: 83px;
