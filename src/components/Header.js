@@ -38,8 +38,9 @@ export default class Header extends Component {
 						<HashLink className="header-nav-item" to="/#publications">Новости</HashLink>
 						<Link className="header-nav-item" to="/bureau">Бюро</Link>
 						<Link className="header-nav-item" to="/video">Видео</Link>
+						<Link className="header-nav-item" to="/projects">Проекты</Link>
 						<HashLink className="header-nav-item" to="/#contacts">Контакты</HashLink>
-						<HashLink className="header-nav-item" to="/#management">Члены Организации</HashLink>
+						{/* <HashLink className="header-nav-item" to="/#management">Члены Организации</HashLink> */}
 					</nav>
 					<div className="col col-lg-2 header-controls d-none d-md-block">
 						<button onClick={() => document.querySelector('#payments').scrollIntoView({

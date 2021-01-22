@@ -13,18 +13,19 @@ import fetch from 'node-fetch'
 // id 17 - video
 const server = "http://opora66.ru/wp-json/wp/v2"
 
-async function fetchVideos(server) {
-  const videos = [];
-  await fetch(`${server}/posts?categories=17&per_page=100`)
+function fetchCategory(server) {
+  fetch(`${server}/posts?categories=21&per_page=100&_embed`)
     .then(data => data.json())
     .then(data => {
-      data.forEach(videoItem => {
-        const video = {};
-        video.title = videoItem.title.rendered;
-        video.content = videoItem.content.rendered;
-        videos.push(video);
+      const result = data.map(item => {
+        return {
+          id: item.id,
+          title: item.title.rendered,
+          image: item._embedded['wp:featuredmedia'][0].source_url,
+        }
       });
+      console.log(result)
+      return result;
     });
-  return videos;
 }
-fetchVideos(server)
+fetchCategory(server)

@@ -1,0 +1,24 @@
+.project-wrapper {
+	position: relative;
+	min-height: 250px;
+
+	background-position: center;
+  background-size: cover;
+  
+  margin-bottom: 20px;
+}
+
+.project-wrapper:hover {
+	box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.project-title {
+	position: absolute;
+	width: calc(100% + 5px);
+	bottom: 10px;
+	left: -5px;
+
+	padding: 10px 5px;
+	background-color: rgb(26, 26, 38);
+	color: white;
+}
