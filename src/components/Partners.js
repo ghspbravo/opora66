@@ -74,7 +74,7 @@ export default class Partners extends Component {
                   <div className="swiper-wrapper">
 
                     {this.state.partners.map((item) => <div key={item.id} className="swiper-slide partner-item">
-                      <a target='_blank' href={item.title.rendered}><img src={item._embedded["wp:featuredmedia"] && item._embedded["wp:featuredmedia"][0].source_url} alt={item.title.rendered} /></a>
+                      <a target='_blank' rel="noopener noreferrer" href={item.title.rendered}><img src={item._embedded["wp:featuredmedia"] && item._embedded["wp:featuredmedia"][0].source_url} alt={item.title.rendered} /></a>
                     </div>)}
 
                   </div>

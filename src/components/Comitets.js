@@ -65,10 +65,10 @@ export default class Comitets extends Component {
             <h2 className="section-description">Комитеты и комиссии</h2>
           </div>
           <div className="comitets-container swiper-container">
-            <div class="swiper-wrapper">
+            <div className="swiper-wrapper">
               {this.state.comitets.map(comitet => < Link key={comitet.id} to={`p=${comitet.id}`} className="swiper-slide comitets-item">
                 <div className="comitets-item-thumbnail d-flex justify-content-center align-items-center">
-                  <img src={comitet._embedded["wp:featuredmedia"] && comitet._embedded["wp:featuredmedia"][0].source_url} alt={comitet.title.rendered} alt="" />
+                  <img src={comitet._embedded["wp:featuredmedia"] && comitet._embedded["wp:featuredmedia"][0].source_url} alt={comitet.title.rendered} />
                 </div>
                 <p>{comitet.title.rendered}</p>
               </Link>)}
