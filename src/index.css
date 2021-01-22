@@ -310,6 +310,10 @@ a img {
 	display: block;
 }
 
+a.__withoutLine {
+  text-decoration: none;
+}
+
 figure {
 	margin: 0;
 }

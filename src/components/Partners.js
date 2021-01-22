@@ -66,7 +66,6 @@ export default class Partners extends Component {
             <section className="col-lg-7 d-flex justify-content-center">
               <div className="col-lg-9">
                 <div className="section-title title-center">
-                  <div className="section-name">Мы строим доверие</div>
                   <div className="section-description">Наши партнеры</div>
                 </div>
                 <div className="partners-container swiper-container">

@@ -11,7 +11,6 @@ import Steps from './Steps';
 import Payments from './Payments';
 import Partners from './Partners';
 import Contacts from './Contacts';
-import Adress from './Adress';
 import Comitets from './Comitets';
 
 export default class Main extends Component {
@@ -24,16 +23,15 @@ export default class Main extends Component {
         <Banner />
         <About />
         <Progress />
-        <Comitets server={this.props.server}/>
+        <Comitets server={this.props.server} />
         <Publications server={this.props.server} />
         <Map />
         <Management server={this.props.server} />
         <Reviews />
         <Steps />
         <Payments />
-        <Partners server={this.props.server}/>
+        <Partners server={this.props.server} />
         <Contacts />
-        <Adress />
       </div>
     )
   }

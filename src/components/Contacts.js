@@ -2,119 +2,52 @@ import React, { Component } from 'react'
 
 import { YMaps, Map, Placemark, ZoomControl } from 'react-yandex-maps';
 
-async function sendMail(name, email, phonenumber, theme, message) {
-    return await fetch('http://opora66.ru/mail.php', {
-        method: 'post',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "name": name,
-            "email": email,
-            "phonenumber": phonenumber,
-            "theme": theme,
-            "message": message
-        })
-    }).then(data => {
-        return data.status;
-    });
-}
-
-
 export default class Contacts extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            name: '',
-            email: '',
-            phonenumber: '',
-            theme: '',
-            message: ''
-        }
-    }
-
-    handleSubmit = (e) => {
-        e.preventDefault()
-
-        sendMail(
-            this.state.name,
-            this.state.email,
-            this.state.phonenumber,
-            this.state.theme,
-            this.state.message
-        ).then((code) => {
-            if (code === 200) window.alert('Отправлено успешно!')
-            else window.alert('Возникли проблемы с отправкой')
-        })
-    }
-
-    handleInputChange = e => {
-        const stateName = e.target.dataset["for"]
-        const value = e.target.value
-        this.setState((prevState) => {
-            return prevState[stateName] = value
-        })
-    }
-
-    render() {
-        return (
-            <section id="contacts" className="section-side-left">
-                <div className="section-content container">
-                    <div className="row">
-                        <div className="col-lg-6 image-bordered contacts-map">
-                            <YMaps>
-                                <Map defaultState={{
-                                    center: [56.843747, 60.571414],
-                                    zoom: 14
-                                }}
-                                    width="100%"
-                                    height="100%">
-                                    <Placemark geometry={[56.843747, 60.571414]} />
-                                    <ZoomControl
-                                        options={{
-                                            size: 'small',
-                                            zoomDuration: 1000,
-                                        }} />
-                                </Map>
-                            </YMaps>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="section-title">
-                                <h1 className="section-name">Свяжись с нами</h1>
-                                <h2 className="section-description">Запросить бесплатную консультацию</h2>
-                            </div>
-                            <form id='contact-form' method="post" onSubmit={this.handleSubmit}>
-                                <div className="row contact-input-row">
-                                    <div className="col-sm-6">
-                                        <input onChange={this.handleInputChange} data-for="name" value={this.state.name}
-                                            className="contact-input-item" type="text" placeholder="Имя" />
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <input onChange={this.handleInputChange} data-for="email" value={this.state.email}
-                                            className="contact-input-item" type="text" placeholder="Email" />
-                                    </div>
-                                </div>
-                                <div className="row contact-input-row">
-                                    <div className="col-sm-6">
-                                        <input onChange={this.handleInputChange} data-for="phonenumber" value={this.state.phonenumber}
-                                            className="contact-input-item" type="text" placeholder="Телефон" />
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <input onChange={this.handleInputChange} data-for="theme" value={this.state.theme}
-                                            className="contact-input-item" type="text" placeholder="Тема" />
-                                    </div>
-                                </div>
-                                <div className="row contact-input-row no-gutters">
-                                    <textarea onChange={this.handleInputChange} data-for="message" value={this.state.message}
-                                        className="contact-input-text" name="comment" id="comment" rows="2" placeholder="Я хотел бы обсудить" />
-                                </div>
-                                <button style={{ marginTop: '50px' }} className="button button-light">Отправить</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        )
-    }
+  render() {
+    return (
+      <section id="contacts" className="section-side-left">
+        <div className="section-content container">
+          <div className="row">
+            <div className="col-lg-6 image-bordered contacts-map">
+              <YMaps>
+                <Map defaultState={{
+                  center: [56.843747, 60.571414],
+                  zoom: 14
+                }}
+                  width="100%"
+                  height="100%">
+                  <Placemark geometry={[56.843747, 60.571414]} />
+                  <ZoomControl
+                    options={{
+                      size: 'small',
+                      zoomDuration: 1000,
+                    }} />
+                </Map>
+              </YMaps>
+            </div>
+            <div className="col-lg-6">
+              <div className="section-title">
+                <h2 className="section-description">Свяжись с нами</h2>
+              </div>
+              <div>
+                <h1 className="adress-city">Екатеринбург</h1>
+                <p className="adress-description">
+                  <b>Юридический адрес</b>:
+                    <br className="d-sm-none" />620075, г. Екатеринбург,
+                    <br className="d-sm-none" /> пр-т. Ленина, д.54, корп.4, кв. 171-172
+                    <br /> <b>Фактический адрес</b>:
+                    <br className="d-sm-none" />620014, г. Екатеринбург,
+                    <br className="d-sm-none" /> ул. Юмашева, д.11
+                    <br /> <b>С понедельника по пятницу</b>:
+                    <br className="d-sm-none" /> с 10:00 до 18:00
+                    <br /> +7 (343) 382-23-48
+                    <br /> <a href="mailto:opora-66@mail.ru">opora-66@mail.ru</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
 }

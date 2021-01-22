@@ -53,6 +53,7 @@ class App extends Component {
               <HashLink className="header-nav-mobile-item" to="/#publications">Новости</HashLink>
               <Link className="header-nav-mobile-item" to="/bureau">Бюро</Link>
               <Link className="header-nav-mobile-item" to="/video">Видео</Link>
+              <Link className="header-nav-mobile-item" to="/projects">Проекты</Link>
               <HashLink className="header-nav-mobile-item" to="/#contacts">Контакты</HashLink>
               <HashLink className="header-nav-mobile-item" to="/#management">Члены Организации</HashLink>
             </div>

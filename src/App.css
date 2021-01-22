@@ -807,7 +807,6 @@ header {
 
 /* ADRESS */
 .adress-city {
-    color: white;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -815,7 +814,6 @@ header {
 }
 
 .adress-description {
-    color: white;
     text-align: center;
     font-size: 14px;
     line-height: 2;
