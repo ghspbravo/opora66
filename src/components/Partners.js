@@ -14,7 +14,7 @@ import Swiper from 'swiper';
  */
 function fetchPartners(server) {
   const partnersId = 20;
-  const api = `${server}/posts?categories=${partnersId}&_embed`;
+  const api = `${server}/posts?categories=${partnersId}&per_page=100&_embed`;
 
   return fetch(api).then(result => {
     return result.json()
