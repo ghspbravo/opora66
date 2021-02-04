@@ -47,7 +47,7 @@ export default class Video extends Component {
           <h1>Видеоархив</h1>
           <div className="video-gallery">
 
-            {this.state.videoList.length &&
+            {this.state.videoList.length > 0 &&
               this.state.videoList.map(video => <div className="video-item">
                 <h2>{video.title}</h2>
                 {Parser(video.content)}

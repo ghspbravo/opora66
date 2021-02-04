@@ -47,7 +47,7 @@ export default class Projects extends Component {
 					<h1>Проекты</h1>
 
 					<div className='row justify-content-center'>
-						{this.state.projectsList.length &&
+						{this.state.projectsList.length > 0 &&
 							this.state.projectsList.map((project) => (
 								<Link key={project.id} to={`/projects/p=${project.id}`} className='col-12 col-md-4 col-lg-3'>
 									<div className='project-wrapper' style={{ backgroundImage: `url(${project.image})` }}>
