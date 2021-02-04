@@ -14,9 +14,6 @@ import Contacts from './Contacts';
 import Comitets from './Comitets';
 
 export default class Main extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
   render() {
     return (
       <div id="main" className="tingle-content-wrapper">
