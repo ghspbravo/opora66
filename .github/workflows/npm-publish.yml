@@ -23,7 +23,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         local-dir: build/
-        ftp-server: ${{ secrets.FTP_ADDRESS }}
-        ftp-username: ${{ secrets.FTP_USER }}
+        server-dir: /wordpress/public_html/frontend/
+        ftp-server: opora66.ru
+        ftp-username: cr63458_opora
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         git-ftp-args: --all
