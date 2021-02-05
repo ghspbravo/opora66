@@ -20,11 +20,11 @@ jobs:
     - run: yarn install
     - run: yarn build
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         local-dir: build/
         server-dir: /wordpress/public_html/frontend/
-        ftp-server: opora66.ru
-        ftp-username: cr63458_opora
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: opora66.ru
+        username: cr63458_opora
+        password: ${{ secrets.FTP_PASSWORD }}
         git-ftp-args: --all
