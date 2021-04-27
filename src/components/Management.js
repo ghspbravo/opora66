@@ -189,7 +189,7 @@ export default class Management extends Component {
                 </ul>
             </div>
             <div style="margin-top: 35px" class="row justify-content-center">
-                <a class="management-file-link" href="http://opora66.ru/wp-content/uploads/2021/01/Члены-Свердловского-отделения-ОПОРА-РОССИИ.docx">Скачать полный список членов орагнизации</a>
+                <a class="management-file-link" href="http://opora66.ru/wp-content/uploads/2021/01/Члены-Свердловского-отделения-ОПОРА-РОССИИ.docx">Скачать полный список членов организации</a>
             </div>
         </div>`
         )
