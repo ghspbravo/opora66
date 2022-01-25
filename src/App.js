@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'normalize.css'
-import '../node_modules/swiper/css/swiper.min.css';
+import '../node_modules/swiper/swiper.min.css';
 import './App.css';
 
 
