@@ -86,7 +86,23 @@ export default class Payments extends Component {
             <input className="contact-input-item col-12" name="customerNumber" style={{ maxWidth: 320 }} placeholder="ФИО" required />
 
             <div style={{ marginTop: '20px' }} className="row no-gutters">
-              <input className='button button-acsent' type="submit" value="Оплатить взнос" />
+              <input className='button button-acsent' type="submit" value="Оплатить 5 000 руб" />
+              <div style={{
+                marginLeft: "15px"
+              }}>
+                <button type="button" onClick={() => this.docs.open()} className="button button-light" >Образцы документов</button>
+              </div>
+            </div>
+          </form>
+          <form style={{ marginTop: 20 }} action="https://money.yandex.ru/eshop.xml" method="post">
+            <input name="paymentType" value="" type="hidden" />
+            <input name="shopId" value="180508" type="hidden" />
+            <input name="scid" value="714672" type="hidden" />
+            <input name="sum" type="hidden" value="10000" />
+            <input className="contact-input-item col-12" name="customerNumber" style={{ maxWidth: 320 }} placeholder="ФИО" required />
+
+            <div style={{ marginTop: '20px' }} className="row no-gutters">
+              <input className='button button-acsent' type="submit" value="Оплатить 10 000 руб" />
               <div style={{
                 marginLeft: "15px"
               }}>
