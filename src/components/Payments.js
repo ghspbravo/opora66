@@ -66,7 +66,7 @@ export default class Payments extends Component {
                         </div>
                     </div> */}
           <p>Членом организации может стать любой гражданин Российской Федерации, достигший 18 лет, разделяющий цели и задачи организации и принимающий <a target="_blank" rel="noopener noreferrer" href="https://opora.ru/upload/iblock/082/0826baa0b00a6b254c634cd4df73049c.pdf">ее Устав</a>
-            <br /> Членский взнос составляет 5000 рублей (срок действия 1 год).
+            <br /> Членский взнос составляет 10 000 рублей (срок действия 1 год).
 </p>
           <p>
             Для вступления в Свердловское отделение <b>«ОПОРЫ РОССИИ»</b> Вам необходимо направить заполненный пакет документов, Вашу фотографию и копию 2-ух страниц паспорта (пасп.данные, прописка) на электронный ящик <a href="mailto:opora-66@mail.ru">opora-66@mail.ru</a>.
@@ -78,22 +78,6 @@ export default class Payments extends Component {
                         <br />4.  в бухгалтерии Свердловского  отделения "ОПОРЫ РОССИИ" по адресу: г. Екатеринбург,  ул. Юмашева, 11
                     </p>
           {/* Docs: https://kassa.yandex.ru/tech/payment-form/payment-form-http.html */}
-          <form action="https://money.yandex.ru/eshop.xml" method="post">
-            <input name="paymentType" value="" type="hidden" />
-            <input name="shopId" value="180508" type="hidden" />
-            <input name="scid" value="714672" type="hidden" />
-            <input name="sum" type="hidden" value="5000" />
-            <input className="contact-input-item col-12" name="customerNumber" style={{ maxWidth: 320 }} placeholder="ФИО" required />
-
-            <div style={{ marginTop: '20px' }} className="row no-gutters">
-              <input className='button button-acsent' type="submit" value="Оплатить 5 000 руб" />
-              <div style={{
-                marginLeft: "15px"
-              }}>
-                <button type="button" onClick={() => this.docs.open()} className="button button-light" >Образцы документов</button>
-              </div>
-            </div>
-          </form>
           <form style={{ marginTop: 20 }} action="https://money.yandex.ru/eshop.xml" method="post">
             <input name="paymentType" value="" type="hidden" />
             <input name="shopId" value="180508" type="hidden" />
@@ -102,7 +86,7 @@ export default class Payments extends Component {
             <input className="contact-input-item col-12" name="customerNumber" style={{ maxWidth: 320 }} placeholder="ФИО" required />
 
             <div style={{ marginTop: '20px' }} className="row no-gutters">
-              <input className='button button-acsent' type="submit" value="Оплатить 10 000 руб" />
+              <input className='button button-acsent' type="submit" value="Оплатить взнос" />
               <div style={{
                 marginLeft: "15px"
               }}>
