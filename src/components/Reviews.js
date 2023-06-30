@@ -25,7 +25,7 @@ export default class Reviews extends Component {
           <div className="section-acsent-light col-12 col-lg-6 col-xl-4">
             <div className="row achievments-wrapper">
               <div className="achievement-item flex-column d-flex align-items-center col-6">
-                <h4 className="achieve-number">18 лет</h4>
+                <h4 className="achieve-number">20 лет</h4>
                 <p className="achieve-description">Успешной работы</p>
                 <img className="achieve-icon" src={achieve_icon_1} alt="achieve icon" />
               </div>
