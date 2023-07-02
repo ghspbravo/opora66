@@ -10,8 +10,8 @@ export default class Adress extends Component {
                     <br className="d-sm-none"/>620075, г. Екатеринбург,
                     <br className="d-sm-none"/> пр-т. Ленина, д.54, корп.4, кв. 171-172
                     <br/> <b>Фактический адрес</b>:
-                    <br className="d-sm-none"/>620014, г. Екатеринбург,
-                    <br className="d-sm-none"/> ул. Юмашева, д.11
+                    <br className="d-sm-none"/>620142, г. Екатеринбург,
+                    <br className="d-sm-none"/> ул. 8 Марта, д.149
                     <br /> <b>С понедельника по пятницу</b>: 
                     <br className="d-sm-none"/> с 10:00 до 18:00
                     <br/> +7 (343) 382-23-48
