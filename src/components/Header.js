@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 import burger from '../res/burger.svg'
-import brand from '../res/OporaBrandHeader2.png'
+import brand from '../res/LogoWithTextRegion.png'
 
 export default class Header extends Component {
 	handleMobileNavOpen = (e) => {

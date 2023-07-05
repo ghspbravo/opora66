@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import oporaBrand from '../res/OporaBrandWhite2.png'
+import oporaBrand from '../res/LogoWithTextRegionWhite.png'
 import bg from '../res/banner-background.jpg'
 
 export default class Banner extends Component {
