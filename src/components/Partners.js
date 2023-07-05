@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React, { Component } from 'react'
 
-import video from '../res/oporaVideo.mp4'
-import videoThumbnail from '../res/LogoWithTextRegionWhite.png'
+// import video from '../res/oporaVideo.mp4'
+// import videoThumbnail from '../res/LogoWithTextRegionWhite.png'
 
 import Swiper from 'swiper';
 
@@ -85,6 +85,12 @@ export default class Partners extends Component {
                 </div>
               </div>
             </section>
+            {/* <div className="col-lg-5 d-flex image-bordered flex-column align-items-center justify-content-center partners-video">
+              <video width="90%" controls muted poster={videoThumbnail}>
+                <source src={video} type="video/mp4" />
+                Your browser does not support html5 video.
+                                </video>
+            </div> */}
           </div>
         </div>
       </section>
