@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 import video from '../res/oporaVideo.mp4'
-import videoThumbnail from '../res/OporaBrand.png'
+import videoThumbnail from '../res/LogoWithTextRegionWhite.png'
 
 import Swiper from 'swiper';
 
