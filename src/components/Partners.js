@@ -66,7 +66,7 @@ export default class Partners extends Component {
       <section id="partners" className="section-dark" style={{ padding: 0 }}>
         <div className="section-content">
           <div className="row no-gutters">
-            <section className="col-lg-7 d-flex justify-content-center">
+            <section className="col-lg-12 d-flex justify-content-center">
               <div className="col-lg-9">
                 <div className="section-title title-center">
                   <div className="section-description">Наши партнеры</div>
@@ -85,12 +85,12 @@ export default class Partners extends Component {
                 </div>
               </div>
             </section>
-            <div className="col-lg-5 d-flex image-bordered flex-column align-items-center justify-content-center partners-video">
+            {/* <div className="col-lg-5 d-flex image-bordered flex-column align-items-center justify-content-center partners-video">
               <video width="90%" controls muted poster={videoThumbnail}>
                 <source src={video} type="video/mp4" />
                 Your browser does not support html5 video.
                                 </video>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
