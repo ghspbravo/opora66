@@ -40,7 +40,7 @@ export default class Reviews extends Component {
                 <img className="achieve-icon" src={achieve_icon_3} alt="achieve icon" />
               </div>
               <div className="achievement-item flex-column d-flex align-items-center col-6">
-                <h4 className="achieve-number">85</h4>
+                <h4 className="achieve-number">89</h4>
                 <p className="achieve-description">Региональных отделений</p>
                 <img className="achieve-icon" src={achieve_icon_4} alt="achieve icon" />
               </div>
