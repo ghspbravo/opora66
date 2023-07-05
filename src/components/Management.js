@@ -91,7 +91,7 @@ export default class Management extends Component {
                     <li>Аптер Григорий Борисович</li>
                     <li>Войтенко Мария Алексеевна</li>
                     <li>Климина Анастасия Васильевна</li>
-                    <li>Ханин Дмитрий Николаевич</li>
+                    <li>Литвиненко Сергей Александрович</li>
                 </ul>
             </div>
             <div class="management-section">
