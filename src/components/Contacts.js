@@ -46,18 +46,18 @@ export default class Contacts extends Component {
                     <br /> <a href="mailto:opora-66@mail.ru">opora-66@mail.ru</a>
                 </p>
               <div className="row">
-                <div className="col-lg-4"></div>
-                <div className="col-lg-2">
+                <div className="col-sm-4"></div>
+                <div className="col-sm-2">
                   <a target='_blank' rel="noopener noreferrer" href="https://vk.com/opora66">
                     <img src={vkLogo} alt="" className="social-contact-logolink" />
                   </a>  
                 </div>
-                <div className="col-lg-2">
+                <div className="col-sm-2">
                   <a target='_blank' rel="noopener noreferrer" href="https://t.me/opora_66">
                     <img src={telegramLogo} alt="" className="social-contact-logolink" />
                   </a>  
                 </div>
-                <div className="col-lg-4"></div>
+                <div className="col-sm-4"></div>
               </div>
               </div>
             </div>
