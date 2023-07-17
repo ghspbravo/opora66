@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import Swiper from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper and modules styles
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+
+Swiper.use([Navigation, Pagination]);
 
 /**
  * Fetch posts from Comitet's category
@@ -38,8 +43,15 @@ export default class Comitets extends Component {
         slidesPerColumn: 2,
         spaceBetween: 30,
         slidesPerGroup: 1,
+        observer: true, 
+        observeParents: true,
 
-        pagination: {
+        Navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        Pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
@@ -76,9 +88,13 @@ export default class Comitets extends Component {
               </Link>)}
 
             </div>
-            <div className="swiper-pagination"></div>
+            <div className='swiper-button-next'></div>
+            {/* <div className="swiper-pagination"></div> */}
           </div>
         </div>
+        {/* <div>
+          <img src={arrowDown} alt="" className="down-arrow" />
+        </div> */}
       </section >
     )
   }
