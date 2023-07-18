@@ -51,7 +51,7 @@ export default class Comitets extends Component {
           prevEl: '.swiper-button-prev',
         },
 
-        Pagination: {
+        pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
@@ -86,11 +86,10 @@ export default class Comitets extends Component {
                 </div>
                 <p>{comitet.title.rendered}</p>
               </Link>)}
-
             </div>
-            <div className='swiper-button-next'></div>
-            {/* <div className="swiper-pagination"></div> */}
+            <div className="swiper-pagination"></div>
           </div>
+          
         </div>
         {/* <div>
           <img src={arrowDown} alt="" className="down-arrow" />
