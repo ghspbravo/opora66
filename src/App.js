@@ -17,7 +17,7 @@ import Projects from './pages/projects';
 
 class App extends Component {
 
-  SERVER = 'http://opora66.ru/wp-json/wp/v2'
+  SERVER = 'https://opora66.ru/wp-json/wp/v2'
 
   componentDidMount() {
 
